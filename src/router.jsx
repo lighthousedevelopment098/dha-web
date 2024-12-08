@@ -50,6 +50,7 @@ import Page404 from "./_root/Pages/Page404";
 import PhotoGallery from "./_root/Pages/PhotoGallery";
 import ComingSoon from "./_root/Pages/ComingSoon";
 import ScrollToTop from "./components/ScrollToTop";
+import IntroductionService from "./components/Introduction/Introduction&Services";
 
 const router = createBrowserRouter([
 
@@ -165,8 +166,8 @@ const router = createBrowserRouter([
       //   element:<Homeserivicspage/>,
       // },
       {
-        path: 'dha-property-exchange/sale-of-property',
-        element: <Salesofproperitypage />,
+        path: 'sale-of-property',
+        element: <SaleProperty />,
       },
       {
         path: 'dha-property-exchange/rent-a-home',
@@ -251,6 +252,10 @@ const router = createBrowserRouter([
       {
         path: "new-editions/portal",
         element: <ComingSoon />,
+      },
+      {
+        path: "Introduction&Services",
+        element: <IntroductionService/>,
       },
     ],
   },
