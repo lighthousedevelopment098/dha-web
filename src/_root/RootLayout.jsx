@@ -11,9 +11,9 @@ const RootLayout = () => {
       <main className="flex-grow">
         <Outlet />
       </main>
-      <div className="fixed bottom-4 right-4">
+      {/* <div className="fixed bottom-4 right-4">
         <ComplaintButton />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

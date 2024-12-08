@@ -5,31 +5,23 @@ import logo from "../../assets/Images/dhalogo.png"; // Adjust the path to your l
 
 const Footer = () => {
   const links = [
-    "FAQs",
-    "Facilities",
-    "Resident Email Info",
-    "Contact",
+    "FAQ's",
+    "Ballot - dha PH-VII(Comm) ",
+    "Buy/Sell Your Property",
+    "Register as JV Partner",
     "Career Opportunities",
   ];
 
   return (
     <footer className="bg-primary text-black">
-      <div className="flex flex-col md:flex-row gap-4 w-[80%] mx-auto py-6">
+      <div className="flex flex-col md:flex-row gap-4 w-full mx-auto p-6">
         {/* Column 1: Address and Contact Info */}
         <div className="flex flex-col md:w-3/4 items-center justify-center text-center">
           <img
-            src={logo}
+            src="/footerimg.png"
             alt="logo"
-            className="object-cover rounded-full pb-5 h-24 md:h-36"
+            className="object-cover  pb-5 h-48 md:h-56"
           />
-          <p className="text-[1rem] md:w-2/3">
-            Defence Housing Authority Islamabad-Rawalpindi Phase-I, Defence
-            Mall, Defence Avenue Islamabad-Rawalpindi-44000 Pakistan
-          </p>
-          <div className="flex flex-col md:flex-row text-[.8rem] gap-4 mt-4">
-            <p>+92-51-111-555-400</p>
-            <p>info@dhai-r.com.pk</p>
-          </div>
         </div>
 
         {/* Column 2: Quick Links */}
@@ -41,7 +33,7 @@ const Footer = () => {
             {links.map((link, index) => (
               <li
                 key={index}
-                className="text-[.8rem] font-semibold md:text-[1rem]"
+                className="text-[.8rem] font-semibold md:text-[.9rem]"
               >
                 <a href="#" className="hover:text-gray-300">
                   {link}
@@ -57,15 +49,15 @@ const Footer = () => {
             Site Links
           </h3>
           <ul className="space-y-2">
-            <li className="text-[.8rem] font-semibold md:text-[1rem]">
+            <li className="text-[.8rem] font-semibold md:text-[.9rem]">
               <a href="/">Call Us:</a>
               <h1>+92-51-111-555-400</h1>
             </li>
-            <li className="text-[.8rem] font-semibold md:text-[1rem]">
+            <li className="text-[.8rem] font-semibold md:text-[.9rem]">
               <a href="/">Send an Email:</a>
               <h1>info@dhai-r.com.pk</h1>
             </li>
-            <li className="text-[.8rem] font-semibold md:text-[1rem]">
+            <li className="text-[.8rem] font-semibold md:text-[.9rem]">
               <a href="/">Release Date: 01 Jan, 2020 Ver: 1.4</a>
               {/* <h1 className="flex  text-[1.6rem] gap-4 mt-2">
                 <FaFacebookF className="text-blue-600" />

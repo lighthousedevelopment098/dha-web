@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa"; // For the hamburger and close icons
 import logo from "../../assets/Images/dhalogo.gif";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar = ({ menuData }) => {
   const [dropdownVisible, setDropdownVisible] = useState(null);
@@ -64,14 +65,19 @@ const Navbar = ({ menuData }) => {
       }`}
       style={{ fontFamily: "system-ui" }}
     >
+      <div className="flex items-center justify-center gap-2">
+        <IoMenu className="text-2xl" />
+
+        {/* <h3>Home</h3> */}
+      </div>
       {/* Logo */}
-      <div>
+      {/* <div>
         <img
           src={logo}
           alt="logo"
           className="h-10 lg:h-12 text-center rounded-full transition-transform duration-500 transform ${isScrolled ? 'scale-90' : 'scale-100'}"
         />
-      </div>
+      </div> */}
 
       {/* Hamburger Menu for Mobile */}
       <div
@@ -84,7 +90,7 @@ const Navbar = ({ menuData }) => {
       {/* Menu Items - Hidden on Mobile */}
 
       <ul
-        className={`lg:flex lg:flex-wrap w-[80%] space-x-4  items-center jusitfy-center hidden uppercase`}
+        className={`lg:flex lg:flex-wrap w-[65%] space-x-4   items-center jusitfy-center hidden `}
       >
         {menuData.map((item, index) => (
           <li

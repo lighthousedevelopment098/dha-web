@@ -1,43 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
-const SectionBlocks = ({ img, heading, paragraph, link, reverse }) => {
+const SectionBlocks = ({ img, title, description, link, bgImg }) => {
   return (
-    <div
-  className={`grid grid-cols-1 md:grid-cols-10 p-5 gap-5 md:px-16 md:py-10 ${
-    reverse ? "md:flex-row-reverse" : ""
-  }`}
->
-  {/* Left (or Right if reversed): Image */}
-  <motion.div
-    className={`col-span-7 md:col-span-4 ${reverse ? "md:order-2" : ""}`}
-    initial={{ x: reverse ? 100 : -100, opacity: 0, rotate: 0 }}
-    animate={{ x: 0, opacity: 1, rotate: 360 }}
-    transition={{ duration: 1 }}
-  >
-    <img
-      src={img}
-      alt="img"
-      className="rounded-lg w-full object-cover h-[50vh] md:h-full"
-    />
-  </motion.div>
+    <div className="bg-white  rounded-md overflow-hidden border group shadow-md shadow-primary">
+      {/* Image Section */}
+      <div className="relative">
+        <img src={img} alt={title} className="w-full h-80 object-fill" />
+      </div>
 
-  {/* Right (or Left if reversed): Text */}
-  <motion.div
-    className="col-span-6 flex flex-col justify-center"
-    initial={{ x: reverse ? -100 : 100, opacity: 0 }}
-    animate={{ x: 0, opacity: 1 }}
-    transition={{ duration: 1 }}
-  >
-    <Link to={link} className="text-xl md:text-3xl font-bold my-2">
-      {heading}
-    </Link>
-    <p className="text-base md:text-[1rem] w-5/6 leading-relaxed text-justify">
-      {paragraph}
-    </p>
-  </motion.div>
-</div>
+      {/* Content Section */}
+      <div
+        className="p-4"
+        style={{
+          backgroundImage: `url(${bgImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transition: "all 0.3s ease",
+        }}
+      >
+        {/* Title */}
+        <h1 className="text-primary text-center font-bold text-xl mb-2 ">
+          {title}
+        </h1>
+
+        {/* Description */}
+        <p className="text-gray-800 border-b-2 pb-2 border-primary text-sm font-semibold mb-2">
+          {description}
+        </p>
+
+        {/* Link */}
+        <Link
+          to={link}
+          className="text-primary font-semibold hover:text-primarylight hover:scale-105 transition-transform duration-300"
+        >
+          See more
+        </Link>
+      </div>
+    </div>
   );
 };
 
