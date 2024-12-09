@@ -50,19 +50,50 @@ import Page404 from "./_root/Pages/Page404";
 import PhotoGallery from "./_root/Pages/PhotoGallery";
 import ComingSoon from "./_root/Pages/ComingSoon";
 import ScrollToTop from "./components/ScrollToTop";
-import IntroductionService from "./components/Introduction/Introduction&Services";
 
 const router = createBrowserRouter([
-
   {
     path: "/",
 
-    element: (<><RootLayout /> <ScrollToTop /> </>),
+    element: (
+      <>
+        <RootLayout /> <ScrollToTop />{" "}
+      </>
+    ),
     children: [
       {
         path: "",
         element: <HomePage />,
       },
+      {
+        path: "/aboutus",
+        element: <AboutUs />,
+      },
+      {
+        path: "/phase-I-details",
+        element: <PhaseIDetailsPage />,
+      },
+      {
+        path: "/phase-VI-details",
+        element: <PhaseVIDetailsPage />,
+      },
+      {
+        path: "/phase-II-details",
+        element: <PhaseIIDetailsPage />,
+      },
+      {
+        path: "/phase-III-details",
+        element: <PhaseIIIDetailsPage />,
+      },
+      {
+        path: "/phase-IV-details",
+        element: <PhaseIVDetailsPage />,
+      },
+      {
+        path: "/phase-V-details",
+        element: <PhaseVDetailsPage />,
+      },
+
       {
         path: "/phase",
         element: <Phases />,
@@ -166,36 +197,36 @@ const router = createBrowserRouter([
       //   element:<Homeserivicspage/>,
       // },
       {
-        path: 'sale-of-property',
-        element: <SaleProperty />,
+        path: 'dha-property-exchange/sale-of-property',
+        element: <Salesofproperitypage />,
       },
       {
-        path: 'dha-property-exchange/rent-a-home',
+        path: "dha-property-exchange/rent-a-home",
         element: <Rentahomepage />,
       },
       {
-        path: 'dha-property-exchange/price-valuation-benchmarking',
+        path: "dha-property-exchange/price-valuation-benchmarking",
         element: <PriceValiuationPage />,
       },
       {
-        path: 'dha-property-exchange/purchase-of-property',
+        path: "dha-property-exchange/purchase-of-property",
         element: <PurchaseProperityPage />,
       },
       {
-        path: 'dha-property-exchange/registration',
+        path: "dha-property-exchange/registration",
         element: <RegistrationPage />,
       },
       {
-        path: 'dha-property-exchange/contact-us',
+        path: "dha-property-exchange/contact-us",
         element: <ContectUsPage />,
       },
       {
-        path: 'procedure/dha-valley/file-opening',
+        path: "procedure/dha-valley/file-opening",
         element: <FileOpeningPage />,
       },
       {
-        path: 'procedure/dha-valley/issuance-new-allotment-certificate',
-        element: <AllotmentCertificatePage />
+        path: "procedure/dha-valley/issuance-new-allotment-certificate",
+        element: <AllotmentCertificatePage />,
       },
       {
         path: "/phase-i-gismap",
@@ -226,7 +257,7 @@ const router = createBrowserRouter([
         element: <Page404 />,
       },
       {
-        path: 'media/events',
+        path: "media/events",
         element: <PhotoGallery />,
       },
       {
