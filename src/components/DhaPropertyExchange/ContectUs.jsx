@@ -50,7 +50,6 @@
 
 
 
-
 import React from "react";
 
 const ContactUs = () => {
@@ -74,53 +73,81 @@ const ContactUs = () => {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center relative px-4"
-      style={{ backgroundImage: 'url("/path-to-your-background.jpg")' }}
-    >
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-white/70"></div>
-
-      {/* Page Content */}
-      <div className="relative z-10 max-w-6xl mx-auto py-16">
-        {/* Title */}
-        <h1 className="text-center text-3xl md:text-4xl font-bold text-[#007BFF] mb-8">
+    className="min-h-screen bg-cover bg-center relative px-4"
+    style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
+  >
+    {/* Background Overlay */}
+    <div className="absolute inset-0 bg-white/70"></div>
+  
+    {/* Page Content */}
+    <div className="relative z-10 max-w-6xl mx-auto py-16 flex flex-wrap">
+      {/* Title */}
+      <div className="w-full">
+        <h1 className="text-center text-3xl md:text-4xl font-bold text-primary mb-8">
           Contact Us
         </h1>
-
-        {/* Subheading */}
-        <p className="text-left text-xl text-gray-700 font-semibold mb-4">
+      </div>
+  
+      {/* Subheading */}
+      <div className="w-full">
+        <p className="text-left text-xl text-primary font bold ml-6 underline  font-semibold mb-4">
           Contact Our Team
         </p>
-
-        {/* Team Members */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-lg p-6 border border-gray-200"
-            >
-              <h3 className="text-lg font-bold text-[#007BFF]">
-                Name: {member.name}
-              </h3>
-              <p className="text-gray-700 mt-2">
-                Designation: {member.designation}
-              </p>
-              <p className="text-gray-700 mt-1">Ext: {member.ext}</p>
+      </div>
+      <div className="flex flex-col-reverse md:flex-row">
+        <div className="p-10">
+          {/* Team Members and Illustration */}
+          <div className="w-full flex flex-wrap items-start">
+            {/* Team Member Boxes */}
+            <div className="flex flex-col w-full md:w-auto">
+              <div className="bg-white shadow-lg rounded-lg p-4 w-full md:w-[70%] border border-gray-200 mb-6 animate-fade-in-up">
+                <h3 className="text-lg font-bold text-primary">
+                  Name: {teamMembers[0].name}
+                </h3>
+                <p className="text-gray-700 mt-2">
+                  Designation: {teamMembers[0].designation}
+                </p>
+                <p className="text-gray-700 mt-1">Ext: {teamMembers[0].ext}</p>
+              </div>
+  
+              <div className="bg-white shadow-lg rounded-lg p-4 w-full md:w-[70%] border border-gray-200 mb-6 ml-0 md:ml-40 animate-fade-in-up animation-delay-200">
+                <h3 className="text-lg font-bold text-primary">
+                  Name: {teamMembers[1].name}
+                </h3>
+                <p className="text-gray-700 mt-2">
+                  Designation: {teamMembers[1].designation}
+                </p>
+                <p className="text-gray-700 mt-1">Ext: {teamMembers[1].ext}</p>
+              </div>
+  
+              <div className="bg-white shadow-lg rounded-lg p-4 border w-full md:w-[70%] border-gray-200 ml-0 md:ml-80 animate-fade-in-up animation-delay-400">
+                <h3 className="text-lg font-bold text-primary">
+                  Name: {teamMembers[2].name}
+                </h3>
+                <p className="text-gray-700 mt-2">
+                  Designation: {teamMembers[2].designation}
+                </p>
+                <p className="text-gray-700 mt-1">Ext: {teamMembers[2].ext}</p>
+              </div>
             </div>
-          ))}
+          </div>
         </div>
-
-        {/* Illustration */}
-        <div className="mt-12 flex justify-center">
-          <img
-            src="/path-to-your-illustration.png"
-            alt="Contact Illustration"
-            className="w-[300px] md:w-[400px] lg:w-[500px]"
-          />
+        <div>
+          {/* Illustration */}
+          <div className="w-full md:w-auto md:mt-0 ml-auto">
+            <img
+              src="/contactUs.png"
+              alt="Contact Illustration"
+              className="w-[300px]"
+            />
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  
   );
 };
 
 export default ContactUs;
+
