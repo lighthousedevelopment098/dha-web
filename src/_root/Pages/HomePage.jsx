@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "../../components/Home/Home";
-import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 import ImageSlider from "../../components/ImageSlider";
 
 const HomePage = () => {
