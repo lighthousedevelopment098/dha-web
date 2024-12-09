@@ -1,7 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
-import logo from "../../assets/Images/dhalogo.png"; // Adjust the path to your logo
+// Adjust the path to your logo
 
 const Footer = () => {
   const links = [
