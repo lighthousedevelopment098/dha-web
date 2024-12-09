@@ -354,10 +354,12 @@ const Navbar = () => {
 
   const menuData = [
     { label: "Home", link: "/" },
-    { label: "About", link: "/about" },
-    { label: "Services", link: "/services" },
-    { label: "Portfolio", link: "/portfolio" },
-    { label: "Contact", link: "/contact" },
+    { label: "About Us", link: "/about" },
+    { label: "Our Projects", link: "/services" },
+    { label: "Lifestyle", link: "/portfolio" },
+    { label: "Gallery", link: "/contact" },
+    { label: "Facilities", link: "/contact" },
+    { label: "Member Portal", link: "/loginForm" },
   ];
 
   const dropdownData = [
