@@ -336,6 +336,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
+import { dropdownData, menuData } from "../../Utils/data";
 
 const Navbar = () => {
   const [menuHoverVisible, setMenuHoverVisible] = useState(false);
@@ -352,55 +353,9 @@ const Navbar = () => {
     };
   }, []);
 
-  const menuData = [
-    { label: "Home", link: "/" },
-    { label: "About Us", link: "/about" },
-    { label: "Our Projects", link: "/services" },
-    { label: "Lifestyle", link: "/portfolio" },
-    { label: "Gallery", link: "/contact" },
-    { label: "Facilities", link: "/contact" },
-    { label: "Member Portal", link: "/loginForm" },
-  ];
+  
 
-  const dropdownData = [
-    {
-      main: "Property Exchange",
-      link: "/property-exchange",
-      sub: [
-        { label: "Introduction & Services", link: "/Introduction&Services" },
-        { label: "Price Valuation & Benchmarking", link: "/price-valuation" },
-        { label: "Sales Of Property", link: "/sale-of-property" },
-        { label: "Purchase Of Property", link: "/purchase-property" },
-        { label: "Registration", link: "/registration" },
-        { label: "Contact Us", link: "/contact-us" },
-      ],
-    },
-    {
-      main: "Affiliates",
-      link: "/affiliates",
-      sub: [
-        { label: "Property Dealers", link: "/property-dealers" },
-        { label: "Architects", link: "/architects" },
-        { label: "Soil Test Firms", link: "/soil-test-firms" },
-        { label: "Vetting Engineers", link: "/vetting-engineers" },
-        { label: "PTCL", link: "/ptcl" },
-        { label: "Structural Engineers", link: "/structural-engineers" },
-        { label: "Solar Firms", link: "/solar-firms" },
-        { label: "MEP Engineers", link: "/mep-engineers" },
-      ],
-    },
-    {
-      main: "Official Notice",
-      link: "/official-notice",
-      sub: [
-        { label: "DHA ByLaws", link: "/dha-bylaws" },
-        { label: "Transfer Procedure", link: "/transfer-procedure" },
-        { label: "DHA Valley", link: "/dha-valley" },
-        { label: "DHA Property Rentals", link: "/dha-property-rentals" },
-        { label: "Downloads", link: "/downloads" },
-      ],
-    },
-  ];
+ 
 
   return (
     <nav
@@ -447,34 +402,60 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden lg:flex space-x-4 justify-center flex-grow">
-        {menuData.slice(1).map((item, index) => (
-          <li key={index} className="hover:text-primarylight">
-            <Link to={item.link}>{item.label}</Link>
-          </li>
-        ))}
-      </ul>
+    {/* Desktop Menu with Subheadings */}
+<ul className="hidden lg:flex space-x-4 justify-center flex-grow">
+  {menuData.slice(1).map((item, index) => (
+    <li key={index} className="group relative hover:text-primary ">
+      <Link to={item.link}>{item.label}</Link>
+      {item.sub && (
+        <ul className="absolute w-40 text-nowrap hidden group-hover:block top-full left-0 bg-[#D8EFD3] shadow-lg z-50 p-4">
+          {item.sub.map((subItem, subIndex) => (
+            <li key={subIndex} className="py-1 hover:bg-gray-200">
+              <Link to={subItem.link} className="text-sm">
+                {subItem.subLabel}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  ))}
+</ul>
+
 
       {/* Hamburger Menu */}
       <div
-        className="lg:hidden text-primarylight text-2xl"
+        className="lg:hidden text-primary text-2xl"
         onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
       >
         {mobileMenuVisible ? <FaTimes /> : <FaBars />}
       </div>
 
       {/* Mobile Menu */}
-      {mobileMenuVisible && (
-        <ul className="lg:hidden flex flex-col space-y-4 text-white absolute top-14 left-0 w-full bg-primary p-4">
-          {menuData.map((item, index) => (
-            <li key={index}>
-              <Link to={item.link} className="block text-white">
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      {/* Mobile Menu with Subheadings */}
+{mobileMenuVisible && (
+  <ul className="lg:hidden flex flex-col space-y-4 text-white absolute top-14 left-0 w-full bg-primary p-4">
+    {menuData.map((item, index) => (
+      <li key={index}>
+        <Link to={item.link} className="block text-white">
+          {item.label}
+        </Link>
+        {item.sub && (
+          <ul className="mt-2 pl-4 text-nowrap">
+            {item.sub.map((subItem, subIndex) => (
+              <li key={subIndex} className="py-1 text-sm">
+                <Link to={subItem.link} className="text-gray-200">
+                  {subItem.subLabel}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+)}
+
     </nav>
   );
 };

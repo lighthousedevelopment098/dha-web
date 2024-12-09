@@ -85,7 +85,7 @@ const Phase = () => {
     <>
       <HeroSectionWithHeading
         heading="Some of Our Esteemed Projects:"
-        backgroundVideo="/DHA Phase 2 Islamabad Central Park  4K  Drone Cinematics720p.mp4"
+        backgroundImage="/bg-img.jpg"
       />
       <div className="bg-brand text-white px-5 py-4">
         {/* <SectionTitle title="" /> */}

@@ -50,7 +50,17 @@ import Page404 from "./_root/Pages/Page404";
 import PhotoGallery from "./_root/Pages/PhotoGallery";
 import ComingSoon from "./_root/Pages/ComingSoon";
 import ScrollToTop from "./components/ScrollToTop";
+import AboutUs from "./components/AboutUs/AboutUs";
+import PhaseIDetailsPage from "./_root/Pages/PhaseIDetailsPage";
+import PhaseVIDetailsPage from "./_root/Pages/PhaseVIDetailsPage";
+import PhaseIIDetailsPage from "./_root/Pages/PhaseIIDetailsPage";
+import PhaseIIIDetailsPage from "./_root/Pages/PhaseIIIDetailsPage";
+import PhaseIVDetailsPage from "./_root/Pages/PhaseIVDetailsPage";
+import PhaseVDetailsPage from "./_root/Pages/PhaseVDetailsPage";
 import IntroductionService from "./components/Introduction/Introduction&Services";
+import OnGoing from "./components/Ongoing/onGoing";
+import Registration from "./components/DhaPropertyExchange/Registration";
+import ContactUs from "./components/DhaPropertyExchange/ContectUs";
 
 const router = createBrowserRouter([
   {
@@ -198,7 +208,7 @@ const router = createBrowserRouter([
       //   element:<Homeserivicspage/>,
       // },
       {
-        path: 'dha-property-exchange/sale-of-property',
+        path: "dha-property-exchange/sale-of-property",
         element: <Salesofproperitypage />,
       },
       {
@@ -210,16 +220,16 @@ const router = createBrowserRouter([
         element: <PriceValiuationPage />,
       },
       {
-        path: "dha-property-exchange/purchase-of-property",
+        path: "purchaseofproperty",
         element: <PurchaseProperityPage />,
       },
       {
         path: "dha-property-exchange/registration",
-        element: <RegistrationPage />,
+        element: <Registration />,
       },
       {
         path: "dha-property-exchange/contact-us",
-        element: <ContectUsPage />,
+        element: <ContactUs />,
       },
       {
         path: "procedure/dha-valley/file-opening",
@@ -262,7 +272,7 @@ const router = createBrowserRouter([
         element: <PhotoGallery />,
       },
       {
-        path: "member-portal/htp",
+        path: "HowToPay",
         element: <HowToPay />,
       },
       {
@@ -274,7 +284,7 @@ const router = createBrowserRouter([
         element: <CleaningServicesPage />,
       },
       {
-        path: "member-portal/guide",
+        path: "guide",
         element: <GuidePage />,
       },
       {
@@ -287,7 +297,11 @@ const router = createBrowserRouter([
       },
       {
         path: "Introduction&Services",
-        element: <IntroductionService/>,
+        element: <IntroductionService />,
+      },
+      {
+        path: "OnGoing",
+        element: <OnGoing />,
       },
     ],
   },

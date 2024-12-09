@@ -3,13 +3,13 @@ import React from "react";
 
 const IntroductionService = () => {
   const imageUrls = [
-    "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCZ2Tk9g0GxuRuWXrS5XgJA_Syn1Md3QVAuO3cxKoKy35BS0Jq",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJFqLs65B4JvjlGzm6sLq7G67w9n9H4unPVsaVnYEsM66NkxF",
-    "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCgeZ06OPisfPzQ-NFy2al85K4vbKv8GP6jP7-E_mv_Eshzbno",
+    "/introOne.png",
+    "/introTwo.jpeg",
+    "/introThree.png",
   ];
 
   return (
-    <div className="text-cream bg-cover" style={{ backgroundImage: 'url("/property-bg.png")' }}>
+    <div className="text-cream bg-cover" style={{ backgroundImage: 'url("/bg-img.jpg")' }}>
     <div className="">
       <h1 className="flex justify-center items-center p-4 text-3xl font-bold underline text-primary uppercase">
         Introduction
@@ -34,7 +34,7 @@ const IntroductionService = () => {
             key={index}
             src={url}
             alt={`img-${index}`}
-            className="h-48 w-80 p-2 object-cover object-top rounded-md"
+            className="h-48 w-80 p-2 object-cover object-top rounded-lg"
           />
         ))}
       </div>
