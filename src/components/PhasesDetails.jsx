@@ -27,16 +27,16 @@ const PhasesDetails = ({
             <img
               src={mainImage} // Dynamic main image
               alt="Phase Details"
-              className="rounded-md object-cover shadow-lg"
+              className="rounded-md object-cover "
             />
           </div>
         </div>
       </div>
 
       {/* Description Section */}
-      <div className="mt-5 px-4 py-2 mx-auto max-w-5xl bg-white shadow-md shadow-gray-800 lg:px-16 text-center">
-        <p className="text-sm font-bold">{descriptionTitle}</p>
-        <p className="mt-4 text-[.7rem] font-bold leading-relaxed max-w-4xl mx-auto">
+      <div className="mt-5 px-4 py-2 mx-auto max-w-5xl bg-white shadow-md shadow-gray-800 lg:px-14 text-center">
+        <p className="text-[.7rem] font-bold">{descriptionTitle}</p>
+        <p className="mt-2 text-[.7rem] font-bold leading-relaxed max-w-4xl mx-auto">
           {descriptionText}
         </p>
         <h1 className="text-[.7rem] py-2 font-bold">{desTitle}</h1>
@@ -48,13 +48,13 @@ const PhasesDetails = ({
         <h2 className="text-center text-2xl font-bold mb-8">
           <span className="border-b-2 border-[#707070]">Images</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 px-4 md:px-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 px-4 md:px-10 max-w-6xl mx-auto">
           {galleryImages.map((image, index) => (
             <img
               key={index}
               src={image} // Dynamic gallery images
               alt={`Gallery Image ${index + 1}`}
-              className="rounded-lg shadow-lg object-cover w-full h-56"
+              className="rounded  object-cover w-full h-56 p-0 m-0"
             />
           ))}
         </div>

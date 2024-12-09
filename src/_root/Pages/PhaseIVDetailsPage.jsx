@@ -7,7 +7,7 @@ const PhaseIVDetailsPage = () => {
     phaseTitle: "DHA PHASE-IV",
     mainImage: "/phaseIV.png", // Main section image
     descriptionTitle:
-      "Discover the unique lifestyle and scenic beauty of DHA Phase I Community",
+      "Discover the unique lifestyle and scenic beauty of DHA Phase IV Community",
     descriptionText: `
            Designed over an area of approx 4000 Kanals, DHA Phase IV is located adjacent to Orchard Area, DHA Phase I along Soan River. Beautifully set in a semi-hilly area having eye-catching natural landscape with contoured terraces providing a scenic view to residents. The natural topography has been respected to the greatest possible extent while trying to achieve a viable number of plots with an economical and well-engineered infrastructure of civic and municipal services. The project will offer high-end amenities with recreational facilities & green areas.
           `,

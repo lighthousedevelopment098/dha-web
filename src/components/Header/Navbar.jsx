@@ -58,7 +58,6 @@
 //     };
 //   }, []);
 
-
 //   const menuData = [
 //     { label: "Home", link: "/" },
 //     { label: "About", link: "/about" },
@@ -329,9 +328,6 @@
 
 // export default Navbar;
 
-
-
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -354,7 +350,7 @@ const Navbar = () => {
 
   const menuData = [
     { label: "Home", link: "/" },
-    { label: "About Us", link: "/about" },
+    { label: "About Us", link: "/aboutus" },
     { label: "Our Projects", link: "/services" },
     { label: "Lifestyle", link: "/portfolio" },
     { label: "Gallery", link: "/contact" },
@@ -404,7 +400,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex p-4 px-8 lg:px-16 w-full justify-between text-primary shadow-md items-center transition-all font-bold duration-500 ${
+      className={`flex p-4 px-8 lg:px-16 w-full  justify-between text-primary shadow-md items-center transition-all font-bold duration-500 ${
         isScrolled ? "bg-[#F9F9F9]" : "bg-[#F9F9F9]"
       }`}
       style={{ fontFamily: "system-ui" }}
@@ -480,5 +476,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
