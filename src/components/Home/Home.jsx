@@ -7,6 +7,7 @@ import ImageSlider from "../ImageSlider";
 import OurProjectSlider from "../OurProjectSlider";
 import LifeStyleSlider from "../LifeStyleSlider";
 import AboutUs from "../AboutUs/AboutUs";
+import { phasesData } from "../../Utils/data";
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -27,82 +28,17 @@ const Home = () => {
   return (
     <>
       <div className="text-white grid grid-cols-1 md:grid-cols-2 px-4 gap-6 py-5 mx-auto max-w-4xl">
-        {/* Phase I */}
-        <div className="m-0 p-0" data-aos="fade-up">
-          <SectionBlocks
-            img="/Picture2.png"
-            title="Phase I"
-            description="DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi-urban setting."
-            link="/phase-I-details"
-            bgImg="/pngwing.com.png"
-          />
-        </div>
-
-        {/* Phase II - Reversed Layout */}
-        <div className="" data-aos="fade-up">
-          <SectionBlocks
-            img="/Picture2.png"
-            title="Phase I"
-            description="DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi-urban setting."
-            link="/phase-I-details"
-            bgImg="/pngwing.com.png"
-          />
-        </div>
-
-        {/* Phase III */}
-        <div className="" data-aos="fade-up">
-          <SectionBlocks
-            img="/Picture2.png"
-            title="Phase I"
-            description="DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi-urban setting."
-            link="/phase-I-details"
-            bgImg="/pngwing.com.png"
-          />
-        </div>
-
-        {/* Phase IV - Reversed Layout */}
-        <div className="" data-aos="fade-up">
-          <SectionBlocks
-            img="/Picture2.png"
-            title="Phase I"
-            description="DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi-urban setting."
-            link="/phase-I-details"
-            bgImg="/pngwing.com.png"
-          />
-        </div>
-
-        {/* Phase V */}
-        <div className="" data-aos="fade-up">
-          <SectionBlocks
-            img="/Picture2.png"
-            title="Phase I"
-            description="DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi-urban setting."
-            link="/phase-I-details"
-            bgImg="/pngwing.com.png"
-          />
-        </div>
-
-        {/* Phase VI - Reversed Layout */}
-        <div className="" data-aos="fade-up">
-          <SectionBlocks
-            img="/Picture2.png"
-            title="Phase I"
-            description="DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi-urban setting."
-            link="/phase-I-details"
-            bgImg="/pngwing.com.png"
-          />
-        </div>
-
-        {/* DHA Valley */}
-        <div className="" data-aos="fade-up">
-          <SectionBlocks
-            img="/Picture2.png"
-            title="Phase I"
-            description="DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi-urban setting."
-            link="/phase-I-details"
-            bgImg="/pngwing.com.png"
-          />
-        </div>
+        {phasesData.map((phase, index) => (
+          <div key={index} className="" data-aos="fade-up">
+            <SectionBlocks
+              img={phase.img}
+              title={phase.title}
+              description={phase.description}
+              link={phase.link}
+              bgImg={phase.bgImg}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="max-w-4xl mx-auto">
@@ -113,12 +49,12 @@ const Home = () => {
       </div>
 
       <div>
-        <h1 className=" text-center text-primary text-lg uppercase  md:text-3xl font-bold">
+        <h1 className="pt-4 text-center text-primary text-lg uppercase  md:text-3xl font-bold">
           <span className="border-b-2 border-primary"> LifeStyle</span>
         </h1>
         <LifeStyleSlider />
       </div>
-      <div className="max-w-4xl mx-auto px-4 my-5 grid grid-cols-2 md:grid-cols-5 gap-4">
+      <div className="max-w-4xl mx-auto p-4 my-5 grid grid-cols-2 md:grid-cols-5 gap-4">
         {images.map((image, index) => (
           <img
             key={index}

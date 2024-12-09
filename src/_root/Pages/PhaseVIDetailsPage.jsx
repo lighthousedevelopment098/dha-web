@@ -7,7 +7,7 @@ const PhaseVIDetailsPage = () => {
     phaseTitle: "DHA PHASE-VI",
     mainImage: "/phasevi.png", // Main section image
     descriptionTitle:
-      "Discover the unique lifestyle and scenic beauty of DHA Phase I Community",
+      "Discover the unique lifestyle and scenic beauty of DHA Phase VI Community",
     descriptionText: `
             DHA Islamabad-Rawalpindi Phase VI (Ex Phase II Ext) was launched in March 2005 and is spread over an area of approximately 55,000 kanals (estimated). Following the redesign of the master plan, incorporating the Overseas Sector, DHA Valley, and DHA Expressway, the contract for the development of Phase VI (Ex Phase II Ext) has been concluded, and development work is underway.
           `,

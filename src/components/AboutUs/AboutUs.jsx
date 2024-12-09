@@ -29,7 +29,7 @@ const AboutUs = () => {
     <div
       className="max-w-6xl mx-auto mt-10 bg-cover bg-center min-h-screen flex flex-col items-center px-4 py-10"
       style={{
-        backgroundImage: "url('/upergradiant.png')",
+        backgroundImage: "url('/uper gradiant copy.jpg')",
         // Replace with your background image path
       }}
     >

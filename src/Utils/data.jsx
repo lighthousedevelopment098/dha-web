@@ -227,3 +227,54 @@ export const advertisementData = [
     title: "Open Auction",
   },
 ];
+
+export const phasesData = [
+  {
+    img: "/phasei.png",
+    title: "Phase I",
+    description:
+      "Phase I DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi",
+    link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+  },
+  {
+    img: "/phaseii.png",
+    title: "Phase II",
+    description:
+      "Nestled between Grand Trunk Road and Islamabad Highway lies our DHA phase II comprising of approx 15.075 kanals: All the sectors are fully urbanized and now home to a number of",
+    link: "/phase-II-details",
+    bgImg: "/pngwing.com.png",
+  },
+  {
+    img: "/phase3.png",
+    title: "Phase III",
+    description:
+      "Located in the heart of enchanting Potohár Region, DHA Phase III promises elegant town planning with beating heart concept.comprising modernized residential and commercial areas, Its town plan also",
+    link: "/phase-III-details",
+    bgImg: "/pngwing.com.png",
+  },
+  {
+    img: "/phase4.png",
+    title: "Phase IV",
+    description:
+      "Designed over an area of approx 4000 Kanals, DHA Phase IV is located adjacent to Orchard Area, DHA Phase I along Soan River. Beautifully set in a semi-hilly area having eye-catching",
+    link: "/phase-IV-details",
+    bgImg: "/pngwing.com.png",
+  },
+  {
+    img: "/phase5.png",
+    title: "Phase V",
+    description:
+      "Formerly launched as Commoner's Town in 2006, over an area of approx 7000 kanals, it has been renamed as DHA Phase V with Sector A. B, C, D,E, F, G & H. Phase-V is located along the Main Islamabad",
+    link: "/phase-V-details",
+    bgImg: "/pngwing.com.png",
+  },
+  {
+    img: "/phase6.png",
+    title: "Phase VI",
+    description:
+      "DHA Islamabad-Rawalpindi Phase VI (Ex Phase - II Ext) has launched in March 2005 and is spread over an area of 55,000 kanals (estimated). After re-designing of masterplan",
+    link: "/phase-VI-details",
+    bgImg: "/pngwing.com.png",
+  },
+];
