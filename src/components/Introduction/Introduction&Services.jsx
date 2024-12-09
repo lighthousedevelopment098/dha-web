@@ -9,7 +9,7 @@ const IntroductionService = () => {
   ];
 
   return (
-    <div className="text-cream bg-cover" style={{ backgroundImage: 'url("/bg-img.jpg")' }}>
+    <div className="text-cream bg-cover" style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}>
     <div className="">
       <h1 className="flex justify-center items-center p-4 text-3xl font-bold underline text-primary uppercase">
         Introduction

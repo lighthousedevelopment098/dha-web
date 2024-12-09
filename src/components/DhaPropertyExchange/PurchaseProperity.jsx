@@ -152,7 +152,7 @@ const PurchaseProperity = () => {
   return (
     <div
       className="relative bg-cover min-h-screen flex items-center justify-center px-4"
-      style={{ backgroundImage: 'url("/bg-img.jpg")' }}
+      style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
     >
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black opacity-30"></div>

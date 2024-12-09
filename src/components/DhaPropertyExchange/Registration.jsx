@@ -152,7 +152,7 @@ const Registration = () => {
   return (
     <div
       className="relative bg-cover min-h-screen flex items-center justify-center px-4"
-      style={{ backgroundImage: 'url("/bg-img.jpg")' }}
+      style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
     >
     
       {/* Background Overlay */}

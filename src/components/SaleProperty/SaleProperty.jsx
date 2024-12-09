@@ -2,7 +2,7 @@ import React from "react";
 
 const Salesofproperity = () => {
   return (
-    <div className="relative bg-cover min-w-screen" style={{ backgroundImage: 'url("/bg-img.jpg")' }}>
+    <div className="relative bg-cover min-w-screen" style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}>
       <div className="border-2 border-gray-600">
         {/* Pseudo-element for background opacity */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
