@@ -18,7 +18,7 @@ const PhaseCard = ({ imageUrl, title, description, videoUrl, link }) => {
   };
 
   return (
-    <div className=" bg-golden p-4 overflow-hidden h-96 w-full">
+    <div className=" bg-primary p-4 overflow-hidden h-96 w-full">
       {/* Conditionally render the image or the video */}
       {!isPlaying ? (
         <div
@@ -62,14 +62,13 @@ const PhaseCard = ({ imageUrl, title, description, videoUrl, link }) => {
         </video>
       )}
       <div className="">
-        <h2 className="text-lg font-semibold text-center py-2 text-golden">
+        <h2 className="text-lg font-semibold text-center py-2 text-primary">
           {title}
         </h2>
         <p className="text-cream mt-2 text-[1rem]">{description}</p>
         <Link
           to={link}
-          className="hover:text-orange-300 text-golden float-end text-[1rem] font-semibold"
-
+          className="hover:text-orange-300 text-primary float-end text-[1rem] font-semibold"
         >
           See More
         </Link>

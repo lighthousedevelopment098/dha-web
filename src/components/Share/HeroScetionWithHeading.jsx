@@ -1,9 +1,13 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const HeroSectionWithHeading = ({ backgroundImage, backgroundVideo, heading }) => {
+const HeroSectionWithHeading = ({
+  backgroundImage,
+  backgroundVideo,
+  heading,
+}) => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
@@ -26,7 +30,7 @@ const HeroSectionWithHeading = ({ backgroundImage, backgroundVideo, heading }) =
       )}
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <h1
-        className="relative text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center uppercase transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-brand"
+        className="relative text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center uppercase transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-primary"
         data-aos="fade-up"
       >
         {heading}

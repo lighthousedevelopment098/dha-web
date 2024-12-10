@@ -52,7 +52,7 @@ const LifeStyleSlider = () => {
             />
             {/* Button positioned at the bottom-left */}
             <div className="absolute bottom-4  left-4 md:left-6 w-32 sm:w-64 md:w-72 flex items-center justify-start backdrop-blur-sm bg-white/20 p-2 rounded-md">
-              <button className="px-2 py-1 sm:px-4 sm:py-2 md:px-5 md:py-1 text-[.5rem] sm:text-base md:text-lg bg-[#BBB2B1] text-black font-bold rounded-md shadow-lg hover:bg-primary-dark transition duration-300">
+              <button className="px-2 py-1 sm:px-4 sm:py-2 md:px-5 md:py-1 text-[.5rem] text-gray-700 sm:text-base md:text-lg bg-[#BBB2B1]  font-bold rounded-md shadow-lg hover:bg-primary-dark transition duration-300">
                 {image.buttonText}
               </button>
             </div>

@@ -5,11 +5,15 @@ const SectionBlocks = ({ img, title, description, link, bgImg }) => {
     <div className="bg-white rounded-md overflow-hidden border h-full md:h-[70vh] lg:h-full  shadow-md shadow-primary">
       {/* Image Section */}
       <div className="relative w-full  m-0 p-0">
-        <img src={img} alt={title} className="w-full h-full object-contain" />
+        <img
+          src={img}
+          alt={title}
+          className="w-full h-full md:h-64 object-fill"
+        />
       </div>
 
       {/* Content Section */}
-      <div className="px-4 pb-4">
+      <div className=" p-3">
         <h1 className="text-primary text-center font-bold text-xl mb-2">
           {title}
         </h1>
@@ -17,7 +21,7 @@ const SectionBlocks = ({ img, title, description, link, bgImg }) => {
         <div
           className="relative text-gray-600 border-b-2 pb-2 border-primary text-[.7rem] font-bold mb-2"
           style={{
-            backgroundImage: `url(${bgImg})`,
+            backgroundImage: `url(/pngwing.com.png)`,
             backgroundPosition: "right",
             backgroundRepeat: "no-repeat",
             backgroundSize: "150px 150px",
