@@ -26,17 +26,20 @@ const AboutUs = () => {
   ];
 
   return (
-    <div
-      className=" mx-auto  bg-cover bg-center w-full flex flex-col items-center  p-10"
-      style={{
-        backgroundImage: "url('/uper gradiant copy.jpg')",
-        // Replace with your background image path
-      }}
-    >
-      <h1 className="text-2xl font-bold text-primary mb-5" data-aos="fade-up">
+    <div className=" mx-auto relative  bg-cover bg-center w-full flex flex-col items-center  p-10">
+      {" "}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
+      ></div>
+      <div className="absolute inset-0 bg-white/70"></div>{" "}
+      <h1
+        className="text-2xl font-bold relative text-primary mb-5"
+        data-aos="fade-up"
+      >
         <span className="border-b-2 border-primary"> ABOUT US</span>
       </h1>
-      <div className="w-full px-4 ">
+      <div className="w-full relative px-4 ">
         {aboutUsData.map((item, index) => (
           <div
             key={index}

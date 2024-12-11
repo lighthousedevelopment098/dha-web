@@ -11,83 +11,6 @@ import image10 from "../assets/Images/Advertisements/secter-k.jpg";
 import image12 from "../assets/Images/Advertisements/auction.jpg";
 // import { label } from "framer-motion/client";
 
-// export const menuData = [
-//   { label: "About Us ", link: "/aboutus" },
-
-//   {
-//     label: "Our Projects",
-//     subItems: [
-//       { label: "Phases", link: "/" },
-//       { label: "Ongoing Projects", link: "/" },
-//       { label: "Upcoming Projects", link: "/" },
-//     ],
-//   },
-//   {
-//     label: "Lifestyle",
-//     subItems: [
-//       {
-//         label: "Education",
-//         link: "/",
-//       },
-//       {
-//         label: "Healthcare",
-//         link: "/",
-//       },
-//       {
-//         label: "Parks",
-//         link: "/",
-//       },
-//       {
-//         label: "Sports",
-//         link: "/",
-//       },
-//       {
-//         label: "Hospitality",
-//         link: "/",
-//       },
-//       {
-//         label: "Retail",
-//         link: "/",
-//       },
-//       {
-//         label: "Infrastructue",
-//         link: "/",
-//       },
-//       {
-//         label: "Amenities",
-//         link: "/",
-//       },
-//     ],
-//   },
-//   {
-//     label: "Gallery",
-//     subItems: [
-//       {
-//         label: "Events",
-//         link: "/",
-//       },
-//       {
-//         label: "Brochures",
-//         link: "/",
-//       },
-//       {
-//         label: "Maps",
-//         link: "/",
-//       },
-//     ],
-//   },
-//   { label: "Facilities ", link: "/" },
-
-//   {
-//     label: "Member Portal",
-//     subItems: [
-//       { label: "Login", link: "/member-portal/login" },
-//       { label: "Guide", link: "/member-portal/guide" },
-//       { label: "How to Pay", link: "/member-portal/htp" },
-//     ],
-//   },
-// ];
-
 export const menuData = [
   { label: "Home", link: "/" },
   {
@@ -147,7 +70,10 @@ export const dropdownData = [
     link: "/Introduction&Services",
     sub: [
       { label: "Introduction & Services", link: "/Introduction&Services" },
-      { label: "Price Valuation & Benchmarking", link: "/dha-property-exchange/price-valuation-benchmarking" },
+      {
+        label: "Price Valuation & Benchmarking",
+        link: "/dha-property-exchange/price-valuation-benchmarking",
+      },
       { label: "Sales Of Property", link: "/saleproperty" },
       { label: "Purchase Of Property", link: "/purchaseofproperty" },
       { label: "Registration", link: "/dha-property-exchange/registration" },
@@ -156,21 +82,24 @@ export const dropdownData = [
   },
   {
     main: "Affiliates",
-    link: "/affiliates",
+    link: "/Propertydealer",
     sub: [
       { label: "Property Dealers", link: "/Propertydealer" },
       { label: "Architects", link: "/Architectspage" },
       { label: "Soil Test Firms", link: "/affiliates/soil-test-firms" },
       { label: "Vetting Engineers", link: "/affiliates/vetting-engineers" },
       { label: "PTCL", link: "/affiliates/ptcl" },
-      { label: "Structural Engineers", link: "/affiliates/structural-engineers" },
+      {
+        label: "Structural Engineers",
+        link: "/affiliates/structural-engineers",
+      },
       { label: "Solar Firms", link: "/affiliates/solar-firms" },
       { label: "MEP Engineers", link: "/affiliates/mep-engineers" },
     ],
   },
   {
     main: "Official Notice",
-    link: "/official-notice",
+    link: "/DHABylawsPage",
     sub: [
       { label: "DHA ByLaws", link: "/DHABylawsPage" },
       { label: "Transfer Procedure", link: "/TransferProcedure" },

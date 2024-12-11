@@ -23,7 +23,10 @@ const Mepengineers = () => {
 
   return (
     <>
-      <div className="bg-cover relative" style={{backgroundImage:'url(/1111.png'}}>
+      <div
+        className="bg-cover relative"
+        style={{ backgroundImage: "url(/1111.png" }}
+      >
         {/* <div className="bg-[#CEB682] flex text-center justify-center p-5">
           <h1 className="text-white text-3xl font-bold">MEP Engineers</h1>
         </div> */}
