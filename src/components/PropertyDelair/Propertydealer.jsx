@@ -98,30 +98,32 @@ const Propertydealer = () => {
   ];
   return (
     <>
-      <div className="bg-golden">
-        <div className="p-4 flex justify-center items-center">
-          <div className="text-cream   w-full max-w-4xl mx-auto">
+      <div className="bg-golden bg-cover relative" style={{ backgroundImage: 'url("/1111.png")' }}>
+       {/* Background Overlay */}
+    <div className="absolute inset-0 bg-white/70"></div>
+        <div className=" relative p-4 flex justify-center items-center">
+          <div className="text-primary bg-white p-4  w-full max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-center p-4">
               List of Approved Property Dealers
             </h2>
             {/* Responsive Table */}
             <div className="overflow-x-auto">
-              <table className="min-w-full border-collapse border-cream">
+              <table className="w-full border-collapse border-primary text-nowrap md:text-wrap">
                 <thead>
                   <tr>
-                    <th className="border border-cream px-2 py-1 text-left text-sm md:text-base">
+                    <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">
                       Ser
                     </th>
-                    <th className="border border-cream px-2 py-1 text-left text-sm md:text-base">
+                    <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">
                       Agency
                     </th>
-                    <th className="border border-cream px-2 py-1 text-left text-sm md:text-base">
+                    <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">
                       Name
                     </th>
-                    <th className="border border-cream px-2 py-1 text-left text-sm md:text-base">
+                    <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">
                       Address
                     </th>
-                    <th className="border border-cream px-2 py-1 text-left text-sm md:text-base">
+                    <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">
                       Mobile Number
                     </th>
                   </tr>
@@ -129,19 +131,19 @@ const Propertydealer = () => {
                 <tbody>
                   {dealers.map((dealer, index) => (
                     <tr key={dealer.id}>
-                      <td className="border border-cream px-2 py-1 text-sm md:text-base">
+                      <td className="border text-center border-primary px-2 py-1 text-sm md:text-base">
                         {index + 1}
                       </td>
-                      <td className="border border-cream px-2 py-1 text-sm md:text-base">
+                      <td className="border border-primary px-2 py-1 text-sm md:text-base">
                         {dealer.agency}
                       </td>
-                      <td className="border border-cream px-2 py-1 text-sm md:text-base">
+                      <td className="border border-primary px-2 py-1 text-sm md:text-base">
                         {dealer.name}
                       </td>
-                      <td className="border border-cream px-2 py-1 text-sm md:text-base">
+                      <td className="border border-primary px-2 py-1 text-sm md:text-base">
                         {dealer.address}
                       </td>
-                      <td className="border border-cream px-2 py-1 text-sm md:text-base">
+                      <td className="border border-primary px-2 py-1 text-sm md:text-base">
                         {dealer.mobile}
                       </td>
                     </tr>

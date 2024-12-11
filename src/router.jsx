@@ -10,11 +10,11 @@ import VerticalPace from "./components/VerticalPace/VerticalPace";
 import LoginForm from "./components/LoginPage/LoginForm";
 import HomePage from "./_root/Pages/HomePage";
 // import DHAmangementpage from './_root/Pages/DHAmangementpage';
-// import Propertydealer from './components/PropertyDelair/Propertydealer';
+import Propertydealer from "./components/PropertyDelair/Propertydealer";
 import Property from "./_root/Pages/Property";
 import Architectspage from "./_root/Pages/Architectspage";
 import SoilTestFirms from "./_root/Pages/SoilTestFirms";
-// import Ptclpage from "./_root/Pages/Ptclpage";
+import Ptclpage from "./_root/Pages/Ptclpage";
 import StructuralEngineerspage from "./_root/Pages/StructuralEngineerspage";
 import SolarFirmspage from "./_root/Pages/SolarFirmspage";
 import MepEngineerspage from "./_root/Pages/MepEngineerspage";
@@ -73,6 +73,10 @@ import AmenitiesPage from "./_root/Pages/AmenitiesPage";
 import EventsPage from "./_root/Pages/EventsPage";
 import MapPage from "./_root/Pages/MapPage";
 import ServicesPage from "./_root/Pages/ServicesPage";
+import DHABylawsPage from "./components/DHAbylaws/dhaByLaws";
+import TransferProcedure from "./components/Transferprocedure/transferProcedure";
+import Renthome from "./components/DhaPropertyExchange/Renthome";
+import DownloadPage from "./components/Download/downloadPage";
 
 const router = createBrowserRouter([
   {
@@ -197,7 +201,7 @@ const router = createBrowserRouter([
         element: <Property />,
       },
       {
-        path: "affiliates/architects",
+        path: "Architectspage",
         element: <Architectspage />,
       },
       {
@@ -208,10 +212,10 @@ const router = createBrowserRouter([
         path: "affiliates/vetting-engineers",
         element: <VettingEngineerspage />,
       },
-      // {
-      //   path: "affiliates/ptcl",
-      //   element: <Ptclpage />,
-      // },
+      {
+        path: "affiliates/ptcl",
+        element: <Ptclpage />,
+      },
       {
         path: "affiliates/structural-engineers",
         element: <StructuralEngineerspage />,
@@ -339,6 +343,26 @@ const router = createBrowserRouter([
       {
         path: "Upcoming",
         element: <Upcoming />,
+      },
+      {
+        path: "Propertydealer",
+        element: <Propertydealer />,
+      },
+      {
+        path: "DHABylawsPage",
+        element: <DHABylawsPage />,
+      },
+      {
+        path: "TransferProcedure",
+        element: <TransferProcedure />,
+      },
+      {
+        path: "Renthome",
+        element: <Renthome />,
+      },
+      {
+        path: "DownloadPage",
+        element: <DownloadPage />,
       },
     ],
   },

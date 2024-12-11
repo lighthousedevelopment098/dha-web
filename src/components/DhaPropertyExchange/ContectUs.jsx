@@ -80,10 +80,10 @@ const ContactUs = () => {
     <div className="absolute inset-0 bg-white/70"></div>
   
     {/* Page Content */}
-    <div className="relative z-10 max-w-6xl mx-auto py-16 flex flex-wrap">
+    <div className="relative z-10 max-w-4xl mx-auto py-16 flex flex-wrap">
       {/* Title */}
       <div className="w-full">
-        <h1 className="text-center text-3xl md:text-4xl font-bold text-primary mb-8">
+        <h1 className="text-center text-3xl md:text-4xl font-bold text-primary mb-8 uppercase underline">
           Contact Us
         </h1>
       </div>

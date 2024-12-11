@@ -5,7 +5,7 @@ import HeroSectionWithHeading from '../../components/Share/HeroScetionWithHeadin
 const MepEngineerspage = () => {
   return (
     <div>
-      <HeroSectionWithHeading backgroundImage='https://synergy-engineers.com/wp-content/uploads/2021/01/head-corporate-4.jpg' heading='MEP Engineers'/>
+      {/* <HeroSectionWithHeading backgroundImage='https://synergy-engineers.com/wp-content/uploads/2021/01/head-corporate-4.jpg' heading='MEP Engineers'/> */}
       <Mepengineers/>
     </div>
   )

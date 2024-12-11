@@ -5,7 +5,7 @@ import HeroSectionWithHeading from '../../components/Share/HeroScetionWithHeadin
 const Salesofproperitypage = () => {
   return (
     <div>
-      <HeroSectionWithHeading backgroundImage={"https://cms.ezylegal.in/wp-content/uploads/2022/09/Sale-deed-under-the-Transfer-of-Property-Act.webp"} heading='Sales Of Properity'/>
+      {/* <HeroSectionWithHeading backgroundImage={"https://cms.ezylegal.in/wp-content/uploads/2022/09/Sale-deed-under-the-Transfer-of-Property-Act.webp"} heading='Sales Of Properity'/> */}
       <Salesofproperity/>
     </div>
   )

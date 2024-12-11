@@ -138,6 +138,7 @@ const ImageSlider = () => {
             }}
 
     >
+      <div className="absolute inset-0 bg-white/70"></div>
       {/* Skewed Previous Image */}
       <div
         className="absolute top-0 left-[-100px] md:left-[-60px]  lg:left-[-60px] w-0  md:w-48 lg:w-[20%] h-full overflow-hidden  z-10 p-10 translate-x-4 -skew-y-12 transition-all duration-500 cursor-pointer"
