@@ -29,7 +29,8 @@ const Home = () => {
     <>
       <div className="text-white grid grid-cols-1 md:grid-cols-2 px-4 gap-6 py-5 mx-auto max-w-4xl">
         {phasesData.map((phase, index) => (
-          <div key={index} className="" data-aos="fade-up">
+          <div key={index} className="">
+            {/* data-aos="zoom-in" */}
             <SectionBlocks
               img={phase.img}
               title={phase.title}
@@ -41,7 +42,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto" data-aos="zoom-in">
         <h1 className=" text-center text-primary text-lg  md:text-3xl font-bold">
           <span className="border-b-2 border-primary"> Our Project</span>
         </h1>
@@ -49,7 +50,10 @@ const Home = () => {
       </div>
 
       <div>
-        <h1 className="pt-4 text-center text-primary text-lg uppercase  md:text-3xl font-bold">
+        <h1
+          className="pt-4 text-center text-primary text-lg uppercase  md:text-3xl font-bold"
+          // data-aos="zoom-in"
+        >
           <span className="border-b-2 border-primary"> LifeStyle</span>
         </h1>
         <LifeStyleSlider />

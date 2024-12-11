@@ -1,14 +1,13 @@
-import React from 'react';
-import banner from '../../assets/Videos/Guide/openAccount.mp4';
-import HeroSectionWithHeading from '../Share/HeroScetionWithHeading';
-import video1 from '../../assets/Videos/Guide/FBL.mp4';
-import video2 from '../../assets/Videos/Guide/UBL.mp4';
-import video3 from '../../assets/Videos/Guide/MCB.mp4';
-import video4 from '../../assets/Videos/Guide/MBL.mp4';
-import video5 from '../../assets/Videos/Guide/HBL.mp4';
-import video6 from '../../assets/Videos/Guide/BAFL.mp4';
-import CardPublicServices from '../PublicServices/CardPublicServices';
-
+import React from "react";
+import banner from "../../assets/Videos/Guide/openAccount.mp4";
+import HeroSectionWithHeading from "../Share/HeroScetionWithHeading";
+import video1 from "../../assets/Videos/Guide/FBL.mp4";
+import video2 from "../../assets/Videos/Guide/UBL.mp4";
+import video3 from "../../assets/Videos/Guide/MCB.mp4";
+import video4 from "../../assets/Videos/Guide/MBL.mp4";
+import video5 from "../../assets/Videos/Guide/HBL.mp4";
+import video6 from "../../assets/Videos/Guide/BAFL.mp4";
+import CardPublicServices from "../PublicServices/CardPublicServices";
 
 const data = [
   {
@@ -45,17 +44,25 @@ const data = [
 
 const HowToPay = () => {
   return (
-    <div className='bg-brand'>
-      <HeroSectionWithHeading backgroundVideo={banner} heading='How to Open Roshan Digital Account and Payment Procedure' />
-      <div className="w-[80%] mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        {data.map((service, index) => (
-          <CardPublicServices
-            key={index}
-            title={service.title}
-            videoSrc={service.videoSrc}
-            imageSrc={service.imageSrc}
-          />
-        ))}
+    <div className="">
+      <HeroSectionWithHeading
+        backgroundVideo={banner}
+        heading="How to Open Roshan Digital Account and Payment Procedure"
+      />
+      <div style={{ backgroundImage: 'url("/bgimg.jpg")' }}>
+        <h1 className=" text-center text-primary text-lg py-5  md:text-3xl font-bold">
+          <span className="border-b-2 border-primary">How to pay</span>
+        </h1>
+        <div className="w-full max-w-5xl mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {data.map((service, index) => (
+            <CardPublicServices
+              key={index}
+              title={service.title}
+              videoSrc={service.videoSrc}
+              imageSrc={service.imageSrc}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

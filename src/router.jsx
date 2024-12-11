@@ -10,11 +10,11 @@ import VerticalPace from "./components/VerticalPace/VerticalPace";
 import LoginForm from "./components/LoginPage/LoginForm";
 import HomePage from "./_root/Pages/HomePage";
 // import DHAmangementpage from './_root/Pages/DHAmangementpage';
-// import Propertydealer from './components/PropertyDelair/Propertydealer';
+import Propertydealer from './components/PropertyDelair/Propertydealer';
 import Property from "./_root/Pages/Property";
 import Architectspage from "./_root/Pages/Architectspage";
 import SoilTestFirms from "./_root/Pages/SoilTestFirms";
-// import Ptclpage from "./_root/Pages/Ptclpage";
+import Ptclpage from "./_root/Pages/Ptclpage";
 import StructuralEngineerspage from "./_root/Pages/StructuralEngineerspage";
 import SolarFirmspage from "./_root/Pages/SolarFirmspage";
 import MepEngineerspage from "./_root/Pages/MepEngineerspage";
@@ -35,19 +35,19 @@ import Salesofproperitypage from "./_root/Pages/Salesofproperitypage";
 // import Rentahomepage from "./_root/Pages/Rentahomepage";
 import PriceValiuationPage from "./_root/Pages/PriceValiuationPage";
 import PurchaseProperityPage from "./_root/Pages/PurchaseProperityPage";
-import RegistrationPage from "./_root/Pages/RegistrationPage";
-import ContectUsPage from "./_root/Pages/ContectUsPage";
+// import RegistrationPage from "./_root/Pages/RegistrationPage";
+// import ContectUsPage from "./_root/Pages/ContectUsPage";
 import FileOpeningPage from "./_root/Pages/FileOpeningPage";
 import AllotmentCertificatePage from "./_root/Pages/AllotmentCertificatePage";
 // import PublicServicesPage from "./_root/Pages/PublicServicesPage";
 // import GuidePage from "./_root/Pages/GuidePage";
-// import HowToPay from "./components/MemberPortel/HowToPay";
+import HowToPay from "./components/MemberPortel/HowToPay";
 import Advertisement from "./_root/Pages/Advertisement";
 // import MobileApp from "./_root/Pages/MobileApp";
 import HomeServicesPage from "./_root/Pages/HomeServicesPage";
 import CleaningServicesPage from "./_root/Pages/CleaningServicesPage";
 import Page404 from "./_root/Pages/Page404";
-import PhotoGallery from "./_root/Pages/PhotoGallery";
+// import PhotoGallery from "./_root/Pages/PhotoGallery";
 import ComingSoon from "./_root/Pages/ComingSoon";
 import ScrollToTop from "./components/ScrollToTop";
 import AboutUs from "./components/AboutUs/AboutUs";
@@ -62,8 +62,16 @@ import OnGoing from "./components/Ongoing/onGoing";
 import Registration from "./components/DhaPropertyExchange/Registration";
 import ContactUs from "./components/DhaPropertyExchange/ContectUs";
 import Upcoming from "./components/Upcoming/upComing";
-import Propertydealer from "./components/PropertyDelair/Propertydealer";
-import Ptclpage from "./_root/Pages/Ptclpage";
+import EducationPage from "./_root/Pages/EducationPage";
+import HealthCarePage from "./_root/Pages/HealthCarePage";
+import ParkPage from "./_root/Pages/ParkPage";
+import SportsPage from "./_root/Pages/SportsPage";
+import HospitalPage from "./_root/Pages/HospitalPage";
+import RetailPage from "./_root/Pages/RetailPage";
+import InfraSturctruePage from "./_root/Pages/InfraSturctruePage";
+import AmenitiesPage from "./_root/Pages/AmenitiesPage";
+import EventsPage from "./_root/Pages/EventsPage";
+import MapPage from "./_root/Pages/MapPage";
 import DHABylawsPage from "./components/DHAbylaws/dhaByLaws";
 import TransferProcedure from "./components/Transferprocedure/transferProcedure";
 import Renthome from "./components/DhaPropertyExchange/Renthome";
@@ -91,10 +99,7 @@ const router = createBrowserRouter([
         path: "/phase-I-details",
         element: <PhaseIDetailsPage />,
       },
-      {
-        path: "/phase-VI-details",
-        element: <PhaseVIDetailsPage />,
-      },
+
       {
         path: "/phase-II-details",
         element: <PhaseIIDetailsPage />,
@@ -111,7 +116,19 @@ const router = createBrowserRouter([
         path: "/phase-V-details",
         element: <PhaseVDetailsPage />,
       },
+      {
+        path: "/phase-VI-details",
+        element: <PhaseVIDetailsPage />,
+      },
 
+      { path: "lifestyle/education", element: <EducationPage /> },
+      { path: "lifestyle/healthcare", element: <HealthCarePage /> },
+      { path: "lifestyle/parks", element: <ParkPage /> },
+      { path: "lifestyle/sports", element: <SportsPage /> },
+      { path: "lifestyle/hospital", element: <HospitalPage /> },
+      { path: "lifestyle/retail", element: <RetailPage /> },
+      { path: "lifestyle/infrastructure", element: <InfraSturctruePage /> },
+      { path: "lifestyle/amenities", element: <AmenitiesPage /> },
       {
         path: "/phase",
         element: <Phases />,
@@ -278,10 +295,18 @@ const router = createBrowserRouter([
         path: "brochures",
         element: <Advertisement />,
       },
-      // {
-      //   path: "HowToPay",
-      //   element: <HowToPay />,
-      // },
+      {
+        path: "events",
+        element: <EventsPage />,
+      },
+      {
+        path: "maps",
+        element: <MapPage />,
+      },
+      {
+        path: "HowToPay",
+        element: <HowToPay />,
+      },
       {
         path: "home-maintenance",
         element: <HomeServicesPage />,
