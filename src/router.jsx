@@ -62,6 +62,12 @@ import OnGoing from "./components/Ongoing/onGoing";
 import Registration from "./components/DhaPropertyExchange/Registration";
 import ContactUs from "./components/DhaPropertyExchange/ContectUs";
 import Upcoming from "./components/Upcoming/upComing";
+import Propertydealer from "./components/PropertyDelair/Propertydealer";
+import Ptclpage from "./_root/Pages/Ptclpage";
+import DHABylawsPage from "./components/DHAbylaws/dhaByLaws";
+import TransferProcedure from "./components/Transferprocedure/transferProcedure";
+import Renthome from "./components/DhaPropertyExchange/Renthome";
+import DownloadPage from "./components/Download/downloadPage";
 
 const router = createBrowserRouter([
   {
@@ -173,7 +179,7 @@ const router = createBrowserRouter([
         element: <Property />,
       },
       {
-        path: "affiliates/architects",
+        path: "Architectspage",
         element: <Architectspage />,
       },
       {
@@ -184,10 +190,10 @@ const router = createBrowserRouter([
         path: "affiliates/vetting-engineers",
         element: <VettingEngineerspage />,
       },
-      // {
-      //   path: "affiliates/ptcl",
-      //   element: <Ptclpage />,
-      // },
+      {
+        path: "affiliates/ptcl",
+        element: <Ptclpage />,
+      },
       {
         path: "affiliates/structural-engineers",
         element: <StructuralEngineerspage />,
@@ -307,6 +313,26 @@ const router = createBrowserRouter([
       {
         path: "Upcoming",
         element: <Upcoming />,
+      },
+      {
+        path: "Propertydealer",
+        element: <Propertydealer />,
+      },
+      {
+        path: "DHABylawsPage",
+        element: <DHABylawsPage />,
+      },
+      {
+        path: "TransferProcedure",
+        element: <TransferProcedure />,
+      },
+      {
+        path: "Renthome",
+        element: <Renthome />,
+      },
+      {
+        path: "DownloadPage",
+        element: <DownloadPage />,
       },
     ],
   },

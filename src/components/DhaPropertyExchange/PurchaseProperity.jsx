@@ -154,11 +154,17 @@ const PurchaseProperity = () => {
       className="relative bg-cover min-h-screen flex items-center justify-center px-4"
       style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
     >
+     
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black opacity-30"></div>
-      <div className="relative  rounded-lg w-full  shadow-lg">
-        <div className="p-2 flex justify-center items-center">
-          <div className="bg-white w-full md:w-[80%] border-3 border-gray-500 rounded-lg p-3">
+      <div className="absolute inset-0 bg-white/70"></div>
+      <div className="relative   w-full  shadow-lg">
+      <div>
+          <h1 className="flex justify-center items-center p-4 text-3xl font-bold underline text-primary uppercase">
+            purchase of property
+          </h1>
+        </div>
+        <div className="p-2 flex justify-center items-center border-none">
+          <div className="bg-white w-full max-w-4xl mx-auto border-3 border-gray-500 rounded-lg p-3">
             <div className="bg-gray-100 border-3 border-gray-500 rounded-lg p-3">
               <div className="bg-white rounded-md shadow-lg">
                 {/* Header Section */}
@@ -262,7 +268,7 @@ const PurchaseProperity = () => {
                   <div className="col-span-1 sm:col-span-2">
                     <button
                       type="submit"
-                      className="w-full bg-[#007BFF] text-white py-2 rounded-md hover:bg-gray-600"
+                      className="w-full bg-[#007BFF] text-white py-2 rounded-md hover:bg-primarylight"
                     >
                       Submit
                     </button>

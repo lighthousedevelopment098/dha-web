@@ -5,7 +5,7 @@ import HeroSectionWithHeading from '../../components/Share/HeroScetionWithHeadin
 const Architectspage = () => {
   return (
     <div>
-      <HeroSectionWithHeading backgroundImage={"https://premierchoiceint.com/wp-content/uploads/2024/01/Grand-Orchard-Elevation6.webp"} heading='Architects'/>
+      {/* <HeroSectionWithHeading backgroundImage={"https://premierchoiceint.com/wp-content/uploads/2024/01/Grand-Orchard-Elevation6.webp"} heading='Architects'/> */}
       <ArchitectsTable/>
     </div>
   )

@@ -5,7 +5,7 @@ import HeroSectionWithHeading from '../../components/Share/HeroScetionWithHeadin
 const StructuralEngineerspage = () => {
   return (
     <div>
-      <HeroSectionWithHeading backgroundImage={"https://www.fenews.co.uk/wp-content/uploads/2019/10/structural_engineer.jpg"} heading='Structure Engineers'/>
+      {/* <HeroSectionWithHeading backgroundImage={"https://www.fenews.co.uk/wp-content/uploads/2019/10/structural_engineer.jpg"} heading='Structure Engineers'/> */}
       <Structuralengineers/>
     </div>
   )

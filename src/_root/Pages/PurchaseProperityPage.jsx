@@ -5,7 +5,7 @@ import HeroSectionWithHeading from '../../components/Share/HeroScetionWithHeadin
 const PurchaseProperityPage = () => {
   return (
     <div>
-      <HeroSectionWithHeading backgroundImage={"https://riverhousephuket.com/wp-content/uploads/2022/07/foreigner-buy-property-in-thailand.jpg"} heading='purchase of Property'/>
+      {/* <HeroSectionWithHeading backgroundImage={"https://riverhousephuket.com/wp-content/uploads/2022/07/foreigner-buy-property-in-thailand.jpg"} heading='purchase of Property'/> */}
       <PurchaseProperity/>
     </div>
     

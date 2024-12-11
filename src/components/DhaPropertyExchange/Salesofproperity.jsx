@@ -17,7 +17,7 @@ const Salesofproperity = () => {
                 </div>
 
                 {/* Form Section */}
-                <form className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form className=" grid grid-cols-1  gap-4">
                   {/* Name */}
                   <div className="flex flex-col">
                     <label className="text-gray-700 font-semibold mb-1">
