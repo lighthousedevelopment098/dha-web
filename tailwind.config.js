@@ -20,7 +20,7 @@ const colors = {
   primary: "#54AC9A",
  
   primarycontent: "#7cfeb7",
-  primarylight: "#01ad4f",
+  primarylight: "#96D2B3",
   primarydark: "#014721",
   brand: "#7d8656",
   secondary: "#74a87f",

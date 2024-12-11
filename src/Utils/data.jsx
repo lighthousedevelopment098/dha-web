@@ -130,6 +130,7 @@ export const menuData = [
     label: "Facilities",
     link: "/facilities",
   },
+  { label: "Services", link: "/services" },
   {
     label: "Member Portal",
     // link: "/loginForm" ,
@@ -235,6 +236,7 @@ export const phasesData = [
       "Phase I DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi",
     link: "/phase-I-details",
     bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
   },
   {
     img: "/phaseii.png",
@@ -275,5 +277,145 @@ export const phasesData = [
       "DHA Islamabad-Rawalpindi Phase VI (Ex Phase - II Ext) has launched in March 2005 and is spread over an area of 55,000 kanals (estimated). After re-designing of masterplan",
     link: "/phase-VI-details",
     bgImg: "/pngwing.com.png",
+  },
+];
+
+export const MapphasesData = [
+  {
+    imgHover: "/phasei.png",
+    title: "Phase I",
+    description:
+      "Phase I DHA Phase I Community has been meticulously planned and designed to best standards in order to present residents with an exceptional way of life and quality living in a semi",
+    link: "/phase-I-details",
+    img: "/mapphase1.png",
+    bgImg: "/mapphase1.png",
+  },
+  {
+    imgHover: "/phaseii.png",
+    title: "Phase II",
+    description:
+      "Nestled between Grand Trunk Road and Islamabad Highway lies our DHA phase II comprising of approx 15.075 kanals: All the sectors are fully urbanized and now home to a number of",
+    link: "/phase-II-details",
+    bgImg: "/pngwing.com.png",
+    img: "/mapphase2.png",
+  },
+  {
+    imgHover: "/phase3.png",
+    title: "Phase III",
+    description:
+      "Located in the heart of enchanting Potohár Region, DHA Phase III promises elegant town planning with beating heart concept.comprising modernized residential and commercial areas, Its town plan also",
+    link: "/phase-III-details",
+    bgImg: "/pngwing.com.png",
+    img: "/mapphase3.png",
+  },
+  {
+    imgHover: "/phase4.png",
+    title: "Phase IV",
+    description:
+      "Designed over an area of approx 4000 Kanals, DHA Phase IV is located adjacent to Orchard Area, DHA Phase I along Soan River. Beautifully set in a semi-hilly area having eye-catching",
+    link: "/phase-IV-details",
+    bgImg: "/pngwing.com.png",
+    img: "/mapphase4.png",
+  },
+  {
+    imgHover: "/phase5.png",
+    title: "Phase V",
+    description:
+      "Formerly launched as Commoner's Town in 2006, over an area of approx 7000 kanals, it has been renamed as DHA Phase V with Sector A. B, C, D,E, F, G & H. Phase-V is located along the Main Islamabad",
+    link: "/phase-V-details",
+    bgImg: "/pngwing.com.png",
+    img: "/mapphase5.png",
+  },
+  {
+    imgHover: "/phase6.png",
+    title: "Phase VI",
+    description:
+      "DHA Islamabad-Rawalpindi Phase VI (Ex Phase - II Ext) has launched in March 2005 and is spread over an area of 55,000 kanals (estimated). After re-designing of masterplan",
+    link: "/phase-VI-details",
+    bgImg: "/pngwing.com.png",
+    img: "/mapphase6.png",
+  },
+];
+
+export const ServiceData = [
+  {
+    img: "/services1.jpg",
+    title: "Environmental Sustainability",
+    description: " * Community clean-up drives.",
+    description1: "* Tree plantation and recycling programs.",
+    description2: "* Water and energy conservation workshops.",
+    // link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
+  },
+  {
+    img: "/services2.jpg",
+    title: "Community Support Services",
+    description: "* Food banks and clothing donation drives. ",
+    description1: "* Temporary shelters and housing assistance.",
+    description2: "* Domestic violence support and crisis helplines.",
+    // link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
+  },
+  {
+    img: "/services3.jpg",
+    title: "Employment & Entrepreneurship",
+    description: "* Job fairs and career counseling.",
+    description1: "* Microfinance and small business support.",
+    description2: "* Apprenticeship and trade skills training programs.",
+    // link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
+  },
+  {
+    img: "/services4.jpg",
+    title: "Housing and Accommodation",
+    description: "* Tree plantation and recycling programs.",
+    description1: "* Tree plantation and recycling programs.",
+    description2: "* Water and energy conservation workshops.",
+    // link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
+  },
+  {
+    img: "/services5.jpg",
+    title: "Cleaning and Maintenance",
+    description: "* Tree plantation and recycling programs.",
+    description1: "* Tree plantation and recycling programs.",
+    description2: "* Water and energy conservation workshops.",
+    // link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
+  },
+  {
+    img: "/services6.jpg",
+    title: "Relocation and Moving Assistance",
+    description: "* Tree plantation and recycling programs.",
+    description1: "* Tree plantation and recycling programs.",
+    description2: "* Water and energy conservation workshops.",
+    link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
+  },
+  {
+    img: "/services7.jpg",
+    title: "Utilities and Facilities Management",
+    description: "* Tree plantation and recycling programs.",
+    description1: "* Tree plantation and recycling programs.",
+    description2: "* Water and energy conservation workshops.",
+    // link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
+  },
+  {
+    img: "/services8.jpg",
+    title: "Lifestyle and Convenience Services",
+    description: "* Tree plantation and recycling programs.",
+    description1: "* Tree plantation and recycling programs.",
+    description2: "* Water and energy conservation workshops.",
+    //  link: "/phase-I-details",
+    bgImg: "/pngwing.com.png",
+    imgHover: "/mapphase1.png",
   },
 ];

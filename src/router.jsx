@@ -72,6 +72,7 @@ import InfraSturctruePage from "./_root/Pages/InfraSturctruePage";
 import AmenitiesPage from "./_root/Pages/AmenitiesPage";
 import EventsPage from "./_root/Pages/EventsPage";
 import MapPage from "./_root/Pages/MapPage";
+import ServicesPage from "./_root/Pages/ServicesPage";
 
 const router = createBrowserRouter([
   {
@@ -145,6 +146,10 @@ const router = createBrowserRouter([
       {
         path: "/facilities",
         element: <Facilities />,
+      },
+      {
+        path: "/services",
+        element: <ServicesPage />,
       },
       // {
       //   path: "media/advertisement",

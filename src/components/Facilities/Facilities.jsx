@@ -53,10 +53,6 @@ const Facilities = () => {
         style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
       ></div>
       <div className="absolute inset-0 bg-white/70"></div>
-      {/* <HeroSectionWithHeading
-        backgroundImage="https://cdn.pk.emaar.com/wp-content/uploads/2023/09/Dusk-Close-1620x832.jpg"
-        heading="Facilities"
-      /> */}
 
       <div className="w-full relative max-w-4xl mx-auto">
         <h1 className=" text-center text-primary text-lg py-5  md:text-3xl font-bold">

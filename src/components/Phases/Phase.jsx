@@ -61,16 +61,14 @@ const Phase = () => {
   }, []);
   return (
     <>
-      <div
-        className=" text-white px-5 py-4  "
-        style={{
-          backgroundImage: "url(/1111.png)",
-          // backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          // backgroundSize: "150px 150px",
-        }}
-      >
-        <div className="w-full max-w-4xl mx-auto my-3 px-4">
+      <div className=" text-white relative px-5 py-4  ">
+        {" "}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url("/1111.png")' }}
+        ></div>
+        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="w-full relative max-w-4xl mx-auto my-3 px-4">
           <h1 className=" text-center text-primary text-lg my-5  md:text-3xl font-bold">
             <span className="border-b-2 border-primary">Phases</span>
           </h1>

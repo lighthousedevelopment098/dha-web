@@ -44,12 +44,17 @@ const data = [
 
 const HowToPay = () => {
   return (
-    <div className="">
+    <div className="relative">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
+      ></div>
+      <div className="absolute inset-0 bg-white/70"></div>
       <HeroSectionWithHeading
         backgroundVideo={banner}
         heading="How to Open Roshan Digital Account and Payment Procedure"
       />
-      <div style={{ backgroundImage: 'url("/bgimg.jpg")' }}>
+      <div className="relative">
         <h1 className=" text-center text-primary text-lg py-5  md:text-3xl font-bold">
           <span className="border-b-2 border-primary">How to pay</span>
         </h1>

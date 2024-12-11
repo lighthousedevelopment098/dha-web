@@ -10,12 +10,12 @@ const PhasesDetails = ({
   dec2,
 }) => {
   return (
-    <div
-      className="min-h-screen bg-cover bg-fixed bg-center text-[#707070]"
-      style={{
-        backgroundImage: "url('/1111.png')", // Replace with your overall background image path
-      }}
-    >
+    <div className="min-h-screen relative bg-cover bg-fixed bg-center text-[#707070]">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url("/1111.png")' }}
+      ></div>
+      <div className="absolute inset-0 bg-white/70"></div>
       {/* Background Section */}
       <div className="relative  max-w-6xl mt-4 md:mt-10 mx-auto bg-cover bg-center flex items-center justify-center">
         {/* Main Content */}
@@ -34,17 +34,17 @@ const PhasesDetails = ({
       </div>
 
       {/* Description Section */}
-      <div className="mt-5 px-4 py-2 mx-2 md:mx-auto max-w-5xl bg-white shadow-md shadow-gray-800 lg:px-14 text-center">
+      <div className="mt-5 relative px-4 py-2 mx-2 md:mx-auto max-w-5xl bg-white shadow-md shadow-gray-800 lg:px-14 text-center">
         <p className="text-[.7rem] font-bold">{descriptionTitle}</p>
         <p className="mt-2 text-[.7rem] font-bold leading-relaxed max-w-4xl mx-auto">
           {descriptionText}
         </p>
-        <h1 className="text-[.7rem] py-2 font-bold">{desTitle}</h1>
+        <h1 className="text-[.7rem] py-2  font-bold">{desTitle}</h1>
         <p className="text-[.7rem] pb-1 font-bold">{dec2}</p>
       </div>
 
       {/* Images Section */}
-      <div className="mt-5 pb-5">
+      <div className="mt-5 relative pb-5">
         <h2 className="text-center text-2xl font-bold mb-8">
           <span className="border-b-2 border-[#707070]">Images</span>
         </h2>

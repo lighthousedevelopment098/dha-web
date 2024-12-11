@@ -31,15 +31,7 @@ const OnGoing = () => {
   }, []);
   return (
     <>
-      <div
-        className=" text-white px-5 py-4 relative "
-        // style={{
-        //   backgroundImage: "url(/1111.png)",
-        //   // backgroundPosition: "center",
-        //   backgroundRepeat: "no-repeat",
-        //   // backgroundSize: "150px 150px",
-        // }}
-      >
+      <div className=" text-white px-5 py-4 relative ">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
