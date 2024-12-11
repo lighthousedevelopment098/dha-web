@@ -1,4 +1,3 @@
-
 // import { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 // import { FaBars, FaTimes } from "react-icons/fa";
@@ -19,10 +18,6 @@
 //       window.removeEventListener("scroll", handleScroll);
 //     };
 //   }, []);
-
-
-
- 
 
 //   return (
 //     <nav
@@ -88,7 +83,6 @@
 //     </li>
 //   ))}
 // </ul>
-
 
 //       {/* Hamburger Menu */}
 //       <div
@@ -178,12 +172,10 @@ const Navbar = () => {
             onClick={toggleMenuHoverVisible} // Toggle on click
           />
           {menuHoverVisible && (
-            <ul
-              className="absolute grid grid-cols-1 md:grid-cols-2 top-full left-0 bg-[#D8EFD3] shadow-lg z-50 w-[18rem] md:w-[30rem]"
-            >
+            <ul className="absolute grid grid-cols-1 md:grid-cols-2 top-full left-0 bg-[#D8EFD3] shadow-lg z-50 w-[18rem] md:w-[35vw]">
               {dropdownData.map((item, index) => (
                 <li key={index} className="p-2 border-r border-gray-200">
-                  <Link to={item.link} className="font-bold underline block">
+                  <Link to={item.link} className="font-bold  underline ">
                     {item.main}
                   </Link>
                   <div className="flex flex-col mt-2">
@@ -191,7 +183,7 @@ const Navbar = () => {
                       <Link
                         key={subIndex}
                         to={sub.link}
-                        className="text-sm text-primary hover:bg-gray-200"
+                        className="text-sm w-full px-3 py-1 hover:bg-[#55AE9C] hover:text-white rounded-sm "
                       >
                         {sub.label}
                       </Link>
@@ -215,10 +207,13 @@ const Navbar = () => {
           <li key={index} className="group relative hover:text-primary">
             <Link to={item.link}>{item.label}</Link>
             {item.sub && (
-              <ul className="absolute w-40 text-nowrap hidden group-hover:block top-full left-0 bg-[#D8EFD3] shadow-lg z-50 p-4">
+              <ul className="absolute  text-nowrap hidden group-hover:block top-full left-0 bg-[#D8EFD3] shadow-lg z-50 p-4">
                 {item.sub.map((subItem, subIndex) => (
-                  <li key={subIndex} className="py-1 hover:bg-gray-200">
-                    <Link to={subItem.link} className="text-sm">
+                  <li key={subIndex} className="">
+                    <Link
+                      to={subItem.link}
+                      className="text-sm px-4 py-1 hover:bg-[#55AE9C] hover:text-white rounded-sm"
+                    >
                       {subItem.subLabel}
                     </Link>
                   </li>
@@ -239,17 +234,20 @@ const Navbar = () => {
 
       {/* Mobile Menu with Subheadings */}
       {mobileMenuVisible && (
-        <ul className="lg:hidden flex flex-col space-y-4 text-white absolute top-14 left-0 w-full bg-primary p-4">
+        <ul className="lg:hidden flex flex-col space-y-4 text-primary absolute top-14 left-0 w-full bg-[#D8EFD3] p-4">
           {menuData.map((item, index) => (
             <li key={index}>
-              <Link to={item.link} className="block text-white">
+              <Link to={item.link} className="block ">
                 {item.label}
               </Link>
               {item.sub && (
                 <ul className="mt-2 pl-4 text-nowrap">
                   {item.sub.map((subItem, subIndex) => (
                     <li key={subIndex} className="py-1 text-sm">
-                      <Link to={subItem.link} className="text-gray-200">
+                      <Link
+                        to={subItem.link}
+                        className="text-sm px-4 py-1 hover:bg-[#55AE9C] hover:text-white rounded-sm"
+                      >
                         {subItem.subLabel}
                       </Link>
                     </li>
@@ -265,4 +263,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

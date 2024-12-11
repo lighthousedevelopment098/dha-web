@@ -32,14 +32,14 @@ const OurProjectSlider = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-3 px-4 md:px-0 shadow-xl shadow-primary">
+    <div className="w-full max-w-4xl mx-auto my-3 px-4 md:px-0 ">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="relative">
+          <div key={index} className="relative ">
             <img
               src={slide.img}
               alt={`Slide ${index + 1}`}
-              className="w-full md:h-[70vh] object-cover rounded-md p-0 m-0"
+              className="w-full md:h-[70vh]  object-cover rounded-md p-0 m-0"
             />
             <div className="absolute bottom-4 left-0 bg-black opacity-50 h-20 flex items-center w-full text-start">
               <a
