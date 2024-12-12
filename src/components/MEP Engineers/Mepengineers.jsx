@@ -25,7 +25,7 @@ const Mepengineers = () => {
     <>
       <div
         className="bg-cover relative"
-        style={{ backgroundImage: "url(/1111.png" }}
+        style={{ backgroundImage: "url(/uper gradiant copy.jpg" }}
       >
         {/* <div className="bg-[#CEB682] flex text-center justify-center p-5">
           <h1 className="text-white text-3xl font-bold">MEP Engineers</h1>
@@ -37,8 +37,8 @@ const Mepengineers = () => {
               LIST OF MEP ENGINEER - DHA ISLAMABAD - FOR THE YEAR 2024
             </h2>
             {/* Responsive Table */}
-            <div className="overflow-x-auto">
-              <table className="min-w-full border-collapse border border-primary text-nowrap md:text-wrap">
+            <div className="overflow-x-auto h-full">
+              <table className="min-w-full border-collapse border border-primary text-nowrap ">
                 <thead>
                   <tr>
                     <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">

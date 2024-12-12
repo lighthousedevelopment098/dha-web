@@ -1,14 +1,11 @@
-import React from 'react'
-import ArchitectsTable from '../../components/Architects/ArchitectsTable'
-import HeroSectionWithHeading from '../../components/Share/HeroScetionWithHeading'
+import ArchitectsTable from "../../components/Architects/ArchitectsTable";
 
 const Architectspage = () => {
   return (
     <div>
-      {/* <HeroSectionWithHeading backgroundImage={"https://premierchoiceint.com/wp-content/uploads/2024/01/Grand-Orchard-Elevation6.webp"} heading='Architects'/> */}
-      <ArchitectsTable/>
+      <ArchitectsTable />
     </div>
-  )
-}
+  );
+};
 
-export default Architectspage
+export default Architectspage;

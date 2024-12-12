@@ -1,12 +1,11 @@
-import React from 'react'
-import Ptcl from '../../components/PTCL/Ptcl'
+import Ptcl from "../../components/PTCL/Ptcl";
 
 const Ptclpage = () => {
   return (
     <div>
-      <Ptcl/>
+      <Ptcl />
     </div>
-  )
-}
+  );
+};
 
-export default Ptclpage
+export default Ptclpage;

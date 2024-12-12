@@ -98,17 +98,20 @@ const Propertydealer = () => {
   ];
   return (
     <>
-      <div className="bg-golden bg-cover relative" style={{ backgroundImage: 'url("/1111.png")' }}>
-       {/* Background Overlay */}
-    <div className="absolute inset-0 bg-white/70"></div>
+      <div
+        className="bg-golden bg-cover relative"
+        style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
+      >
+        {/* Background Overlay */}
+        <div className="absolute inset-0 bg-white/70"></div>
         <div className=" relative p-4 flex justify-center items-center">
           <div className="text-primary bg-white p-4  w-full max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-center p-4">
               List of Approved Property Dealers
             </h2>
             {/* Responsive Table */}
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border-primary text-nowrap md:text-wrap">
+            <div className="overflow-x-auto h-full">
+              <table className="w-full border-collapse border-primary text-nowrap ">
                 <thead>
                   <tr>
                     <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">

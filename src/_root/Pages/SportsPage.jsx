@@ -3,48 +3,22 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionBlocks from "../../components/Home/SectionBlocks";
 
-const onGoings = [
+const SportsData = [
   {
-    title: "APS",
+    title: "Sector E Sports Complex",
 
     link: "/phase-V-details",
-    img: "/education1.png",
-    description: "Data Required",
+    img: "/sports1.png",
+    description:
+      "A premier destination for fitness and sports enthusiasts, offering state-of-the-art facilities and expert guidance.",
   },
   {
-    title: "APS",
+    title: "Phase II Playground",
 
     link: "/phase-V-details",
-    img: "/education2.png",
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: "/education3.png",
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: "/education4.png",
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: "/education5.png",
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: "/education6.png",
-    description: "Data Required",
+    img: "/sports2.png",
+    description:
+      "A dynamic space featuring courts for basketball, football, and tennis, fostering skill development and spirited matches.",
   },
 ];
 
@@ -79,7 +53,7 @@ const SportsPage = () => {
           </h1>
           {/* <SectionTitle title="" /> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 ">
-            {onGoings.map((phase, index) => (
+            {SportsData.map((phase, index) => (
               <div
                 key={index}
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"

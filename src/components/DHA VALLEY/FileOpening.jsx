@@ -3,7 +3,10 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const FileOpening = () => {
   return (
-    <div className="bg-golden h-[100vh] p-8 bg-cover relative" style={{backgroundImage:'url(/1111.png)'}}>
+    <div
+      className="bg-golden h-[100vh] p-8 bg-cover relative"
+      style={{ backgroundImage: "url(/uper gradiant copy.jpg)" }}
+    >
       <div className="absolute inset-0 bg-white/70"></div>
       <div className=" relative p-4 grid grid-cols-1 md:grid-cols-2 justify-center mt-4   ">
         {" "}

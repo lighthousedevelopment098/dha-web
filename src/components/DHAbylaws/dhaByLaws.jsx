@@ -112,16 +112,13 @@ import { IoCloudDownloadOutline } from "react-icons/io5";
 
 const DHABylawsPage = () => {
   return (
-    <div
-      className=" py-5 "
-      style={{
-        backgroundImage: 'url("/uper gradiant copy.jpg")',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="max-w-4xl mx-auto bg-white  bg-opacity-90 shadow-md rounded-lg p-8">
+    <div className=" py-5 relative">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
+      ></div>
+      <div className="absolute inset-0 bg-white/70"></div>
+      <div className="max-w-4xl relative mx-auto bg-white  bg-opacity-90 shadow-md rounded-lg p-8">
         <h1 className="text-4xl font-bold text-center text-primary mb-6 uppercase">
           DHA Bylaws
         </h1>

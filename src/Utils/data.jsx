@@ -9,6 +9,7 @@ import image8 from "../assets/Images/Advertisements/expressway.jpg";
 import image9 from "../assets/Images/Advertisements/secter-j.jpg";
 import image10 from "../assets/Images/Advertisements/secter-k.jpg";
 import image12 from "../assets/Images/Advertisements/auction.jpg";
+import { title } from "framer-motion/client";
 // import { label } from "framer-motion/client";
 
 export const menuData = [
@@ -157,6 +158,56 @@ export const advertisementData = [
   },
 ];
 
+export const EventData = [
+  {
+    imageUrl: "/event1.png",
+    title: "Journey of Hajj pics dated 02 June 2024",
+  },
+  {
+    imageUrl: "/event2.png",
+    title: "IPS (Dubai)",
+  },
+  {
+    imageUrl: "/event3.png",
+    title: "Innovista Opening Cermony dated 28 April 2024",
+  },
+  {
+    imageUrl: "/event4.png",
+    title: "Basket Ball Championship Final dated 26 March 2024",
+  },
+  {
+    imageUrl: "/event5.png",
+    title: "Dha Training Workshop dated 14 Feb 2024",
+  },
+  {
+    imageUrl: "/event6.png",
+    title: "Table Tennis Championship Nov 2023",
+  },
+  {
+    imageUrl: "/event7.png",
+    title: "Meet & greet",
+  },
+  {
+    imageUrl: "/event8.png",
+    title: "Final Badminton Championship",
+  },
+  {
+    imageUrl: "/event9.png",
+    title: "Cycle Race & Heavy Bike Rally",
+  },
+  {
+    imageUrl: "/event10.png",
+    title: "Children Summer Camp Sports Jun 2023",
+  },
+  {
+    imageUrl: "/event11.png",
+    title: "Tambola Night June 2023",
+  },
+  {
+    imageUrl: "/event12.png",
+    title: "Chaand Raat Bazar Apr 2023",
+  },
+];
 export const phasesData = [
   {
     img: "/phasei.png",

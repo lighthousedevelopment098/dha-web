@@ -1,11 +1,7 @@
 import React from "react";
 
 const IntroductionService = () => {
-  const imageUrls = [
-    "/introOne.png",
-    "/introTwo.jpeg",
-    "/introThree.png",
-  ];
+  const imageUrls = ["/introOne.png", "/introTwo.jpeg", "/introThree.png"];
 
   return (
     <div className="min-h-screen relative px-4">
@@ -30,10 +26,11 @@ const IntroductionService = () => {
           <div className="flex flex-col gap-5 justify-start items-start py-5 text-start">
             <div className="bg-white text-gray-500 shadow-lg p-6 rounded-md w-full">
               <p className="leading-6">
-                DHA Property Exchange Islamabad-Rawalpindi was established in Nov 2008
-                with the core purpose to provide valued property services in a
-                customer-friendly environment that helps you to Buy, Sell, and Rent
-                out property in DHA Islamabad-Rawalpindi with faith and confidence.
+                DHA Property Exchange Islamabad-Rawalpindi was established in
+                Nov 2008 with the core purpose to provide valued property
+                services in a customer-friendly environment that helps you to
+                Buy, Sell, and Rent out property in DHA Islamabad-Rawalpindi
+                with faith and confidence.
               </p>
             </div>
           </div>
@@ -52,24 +49,30 @@ const IntroductionService = () => {
 
           {/* Services Section */}
           <div className="flex flex-col gap-4 justify-center items-center py-4 text-start">
-            <h1 className="text-[#717272] underline uppercase text-[1.2rem] md:text-[1rem] font-bold w-full">
+            <h1 className="text-primary underline uppercase text-[1.2rem] md:text-[1rem] font-bold w-full">
               Services
             </h1>
             <ul className="text-[1rem] leading-7 px-6 w-full bg-white text-gray-500 shadow-lg rounded-md list-disc list-inside">
               <li>
-                Our team will facilitate valuable clients/members with a price valuation system to determine the value of their properties at any given time.
+                Our team will facilitate valuable clients/members with a price
+                valuation system to determine the value of their properties at
+                any given time.
               </li>
               <li>
-                The team will try to give you the best rate/offer for your property.
+                The team will try to give you the best rate/offer for your
+                property.
               </li>
               <li>
-                The team will ensure end-to-end transparent dealings and facilitation.
+                The team will ensure end-to-end transparent dealings and
+                facilitation.
               </li>
               <li>
-                1% Service Charges will be charged on the total sale consideration.
+                1% Service Charges will be charged on the total sale
+                consideration.
               </li>
               <li>
-                * For details/rates, please contact our team at Mob No: 0321-5355988.
+                * For details/rates, please contact our team at Mob No:
+                0321-5355988.
               </li>
             </ul>
           </div>

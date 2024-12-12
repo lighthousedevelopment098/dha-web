@@ -1,6 +1,4 @@
-import React from "react";
-import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
-import { advertisementData } from "../../Utils/data";
+import { advertisementData, EventData } from "../../Utils/data";
 import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
 
 const EventsPage = () => {
@@ -21,7 +19,7 @@ const EventsPage = () => {
       /> */}
       <div className="w-full relative max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 p-4">
-          {advertisementData.map((ad, index) => (
+          {EventData.map((ad, index) => (
             <AdvertisementCard
               key={index}
               imageUrl={ad.imageUrl}

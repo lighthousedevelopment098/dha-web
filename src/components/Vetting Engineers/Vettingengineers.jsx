@@ -1,4 +1,3 @@
-
 const Vettingengineers = () => {
   // Data for the table
   const dealers = [
@@ -7,7 +6,8 @@ const Vettingengineers = () => {
       regdno: "VE-2002",
       NAMEOFFIRM: "M/s Shahzad Consulting Engineers",
       NAMEofengr: "Engr. Shahzad Aslam",
-      ADDRESS: "Office # 12, 3rd Floor, National Business Centre, Murree Road Rawalpindi",
+      ADDRESS:
+        "Office # 12, 3rd Floor, National Business Centre, Murree Road Rawalpindi",
       CONTACTNO: "051-4935712, 0300-8507032",
     },
     {
@@ -15,7 +15,8 @@ const Vettingengineers = () => {
       regdno: "VE-2003",
       NAMEOFFIRM: "M/S A.N Associates",
       NAMEofengr: "Mr. Karamat Ali",
-      ADDRESS: "18/62, 1st Floor, Rafiq Center, Adamjee road, Saddar Rawalpindi.",
+      ADDRESS:
+        "18/62, 1st Floor, Rafiq Center, Adamjee road, Saddar Rawalpindi.",
       CONTACTNO: "051-5529849, 0300-8554680",
     },
     {
@@ -23,7 +24,8 @@ const Vettingengineers = () => {
       regdno: "VE-2004",
       NAMEOFFIRM: "M/s Tariq & Saad Associates",
       NAMEofengr: "Allah Nawaz Qaisrani",
-      ADDRESS: "Office No 55/1 Ist Floor Grindlays Market Bank Road Rawalpindi Cantt",
+      ADDRESS:
+        "Office No 55/1 Ist Floor Grindlays Market Bank Road Rawalpindi Cantt",
       CONTACTNO: "051-5792564-5, 0334-5133007",
     },
     {
@@ -31,7 +33,8 @@ const Vettingengineers = () => {
       regdno: "VE-2005",
       NAMEOFFIRM: "M/S Design Inn",
       NAMEofengr: "M Abdul Hayee",
-      ADDRESS: "2nd Floor, Plot No 17-B Main Double Road PWD Society, Lohi Bher Islamabad",
+      ADDRESS:
+        "2nd Floor, Plot No 17-B Main Double Road PWD Society, Lohi Bher Islamabad",
       CONTACTNO: "051-2203037, 03219823259",
     },
     {
@@ -47,7 +50,8 @@ const Vettingengineers = () => {
       regdno: "VE-2013",
       NAMEOFFIRM: "M/s Faisal & Fahad Associates",
       NAMEofengr: "Mr Shahzada Faisal Naeem",
-      ADDRESS: "Office No. 301, Raja Safder Arcade, Bahria Expressway, (Opposite DHA-I Bridge) Bahria Town Rawalpindi",
+      ADDRESS:
+        "Office No. 301, Raja Safder Arcade, Bahria Expressway, (Opposite DHA-I Bridge) Bahria Town Rawalpindi",
       CONTACTNO: "0310-9990888",
     },
     {
@@ -63,7 +67,8 @@ const Vettingengineers = () => {
       regdno: "VE-2015",
       NAMEOFFIRM: "M/s ACES",
       NAMEofengr: "Mr. Shafqat Sami",
-      ADDRESS: "2nd Floor, Saffari Commercial Complex, Saffari, Villas-2, Phase-VII, Bahria Town Rawal Pindi",
+      ADDRESS:
+        "2nd Floor, Saffari Commercial Complex, Saffari, Villas-2, Phase-VII, Bahria Town Rawal Pindi",
       CONTACTNO: "0321-5575995",
     },
     {
@@ -79,7 +84,8 @@ const Vettingengineers = () => {
       regdno: "VE-2021",
       NAMEOFFIRM: "M/S En Em Associates",
       NAMEofengr: "Nadeem Hussain Malik",
-      ADDRESS: "Office 401, 4th Floor, Galaxy Plaza, 103 Block C, Business Square, Gulberg Greens, Islamabad",
+      ADDRESS:
+        "Office 401, 4th Floor, Galaxy Plaza, 103 Block C, Business Square, Gulberg Greens, Islamabad",
       CONTACTNO: "0301-8134815",
     },
     {
@@ -87,7 +93,8 @@ const Vettingengineers = () => {
       regdno: "VE-2025",
       NAMEOFFIRM: "M/S Modern Consulting Engineers",
       NAMEofengr: "Muhammad Amjad Hanif",
-      ADDRESS: "1st floor, River Hills – II Mini Extension 2, Phase 7, Bahria Town Rawalpindi",
+      ADDRESS:
+        "1st floor, River Hills – II Mini Extension 2, Phase 7, Bahria Town Rawalpindi",
       CONTACTNO: "0334-5495998",
     },
     {
@@ -95,7 +102,8 @@ const Vettingengineers = () => {
       regdno: "VE-2026",
       NAMEOFFIRM: "M/S Emarsons Engineering Consultants",
       NAMEofengr: "Munir Ahmed Rana",
-      ADDRESS: "House # 37, Street # 5, Sector A, Zaraj Housing Scheme Islamabad",
+      ADDRESS:
+        "House # 37, Street # 5, Sector A, Zaraj Housing Scheme Islamabad",
       CONTACTNO: "0300-5270599",
     },
     {
@@ -103,7 +111,8 @@ const Vettingengineers = () => {
       regdno: "VE-2027",
       NAMEOFFIRM: "M/S Hafiz Abdul Aleem",
       NAMEofengr: "Hafiz Abdul Aleem",
-      ADDRESS: "2nd Floor, Plaza No 17-B, Main Double Road, PWD Society, Islamabad",
+      ADDRESS:
+        "2nd Floor, Plaza No 17-B, Main Double Road, PWD Society, Islamabad",
       CONTACTNO: "0321-5562846",
     },
     {
@@ -111,7 +120,8 @@ const Vettingengineers = () => {
       regdno: "VE-2023",
       NAMEOFFIRM: "M/S Arcadian Consultancy Services",
       NAMEofengr: "Hafiz Muhammad Awais",
-      ADDRESS: "Office 201, Second Floor, Time Square Plaza, Block 4, Phase VII, Bahria Town Islamabad",
+      ADDRESS:
+        "Office 201, Second Floor, Time Square Plaza, Block 4, Phase VII, Bahria Town Islamabad",
       CONTACTNO: "0312-5977739",
     },
     {
@@ -129,23 +139,24 @@ const Vettingengineers = () => {
       NAMEofengr: "Hassan Baqir",
       ADDRESS: "MZ-12, Defence Shopping Mall, DHA Main Boulevard, Lahore Cantt",
       CONTACTNO: "0331-4296240",
-    }
+    },
   ];
-
-
 
   return (
     <>
-      <div className="bg-golden relative" style={{ backgroundImage: 'url("/1111.png")' }}>
-      <div className="absolute inset-0 bg-white/70"></div>
+      <div
+        className="bg-golden relative"
+        style={{ backgroundImage: 'url("/uper gradiant copy.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-white/70"></div>
         <div className=" relative p-4 flex justify-center items-center">
           <div className="text-primary bg-white rounded-lg p-4  w-full max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-center p-4">
               LIST OF VETTING ENGINEER - DHA ISLAMABAD - FOR THE YEAR 2024
             </h2>
             {/* Responsive Table */}
-            <div className="overflow-x-auto">
-              <table className="min-w-full border-collapse border border-primary text-nowrap md:text-wrap ">
+            <div className="overflow-x-auto h-full">
+              <table className="min-w-full border-collapse border border-primary text-nowrap ">
                 <thead>
                   <tr>
                     <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">
@@ -165,7 +176,6 @@ const Vettingengineers = () => {
                     </th>
                     <th className="border border-primary px-2 py-1 text-left text-sm md:text-base">
                       CONTACT NO
-
                     </th>
                   </tr>
                 </thead>
@@ -203,6 +213,3 @@ const Vettingengineers = () => {
 };
 
 export default Vettingengineers;
-
-
-

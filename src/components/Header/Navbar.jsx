@@ -202,7 +202,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu with Subheadings */}
-      <ul className="hidden lg:flex space-x-4 justify-center flex-grow">
+      <ul className="hidden  lg:flex space-x-4 justify-center flex-grow">
         {menuData.slice(1).map((item, index) => (
           <li key={index} className="group relative hover:text-primary">
             <Link to={item.link}>{item.label}</Link>

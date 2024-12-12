@@ -5,46 +5,36 @@ import SectionBlocks from "../../components/Home/SectionBlocks";
 
 const onGoings = [
   {
-    title: "APS",
+    title: " Emergency Care",
 
     link: "/phase-V-details",
-    img: "/education1.png",
-    description: "Data Required",
+    img: "/health3.jpg",
+    description:
+      "24/7 emergency surgical and medical aid with advanced equipment and medicines for employees and residents.",
   },
   {
-    title: "APS",
+    title: "Health Awareness ",
 
     link: "/phase-V-details",
-    img: "/education2.png",
-    description: "Data Required",
+    img: "/health2.jpg",
+    description:
+      "Regular lectures and programs to promote health education and disease prevention.",
   },
   {
-    title: "APS",
+    title: "Consultation & Ambulance",
 
     link: "/phase-V-details",
-    img: "/education3.png",
-    description: "Data Required",
+    img: "/health1.jpg",
+    description:
+      "Outdoor consultations and 24/7 ambulance services for residents of all ages.Let me know if you need further edits!",
   },
   {
-    title: "APS",
+    title: "On-Site Medical Facilities",
 
     link: "/phase-V-details",
-    img: "/education4.png",
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: "/education5.png",
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: "/education6.png",
-    description: "Data Required",
+    img: "/health4.jpg",
+    description:
+      "Fully equipped with modern medical equipment, furniture, and essential medicines for immediate care.",
   },
 ];
 

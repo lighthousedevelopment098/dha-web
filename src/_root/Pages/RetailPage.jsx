@@ -58,16 +58,7 @@ const RetailPage = () => {
   }, []);
   return (
     <>
-      <div
-        className=" text-white relative px-5 py-4  "
-        // style={{
-        //   backgroundImage: "url(/bgimg.jpg)",
-        //   height: "100%",
-        //   backgroundPosition: "",
-        //   //   backgroundRepeat: "no-repeat",
-        //   //   backgroundSize: "150px 150px",
-        // }}
-      >
+      <div className=" text-white relative px-5 py-4  ">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
@@ -75,7 +66,7 @@ const RetailPage = () => {
         <div className="absolute inset-0 bg-white/70"></div>
         <div className="w-full relative max-w-4xl mx-auto my-3 px-4">
           <h1 className=" text-center text-primary text-lg my-5  md:text-3xl font-bold">
-            <span className="border-b-2 uppercase border-primary">Retails</span>
+            <span className="border-b-2 uppercase border-primary">Retail</span>
           </h1>
           {/* <SectionTitle title="" /> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 ">
