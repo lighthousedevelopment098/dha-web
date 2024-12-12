@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import HeroSection from "./HeroSection";
+import { useEffect } from "react";
+
 import SectionBlocks from "./SectionBlocks";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ImageSlider from "../ImageSlider";
+
 import OurProjectSlider from "../OurProjectSlider";
 import LifeStyleSlider from "../LifeStyleSlider";
-import AboutUs from "../AboutUs/AboutUs";
+
 import { phasesData } from "../../Utils/data";
 const Home = () => {
   useEffect(() => {

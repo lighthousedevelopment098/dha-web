@@ -139,7 +139,7 @@
 
 // export default Navbar;
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
@@ -149,6 +149,24 @@ const Navbar = () => {
   const [menuHoverVisible, setMenuHoverVisible] = useState(false);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const hoverMenuRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        hoverMenuRef.current &&
+        !hoverMenuRef.current.contains(event.target)
+      ) {
+        setMenuHoverVisible(false); // Hide hover menu on outside click
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -170,6 +188,7 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     setMobileMenuVisible(false); // Hide the mobile menu when a link is clicked
+    setMenuHoverVisible(false); // Hide the hover menu when a link is clicked
   };
 
   return (
@@ -183,6 +202,7 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         {/* Menu Icon */}
         <div
+          ref={hoverMenuRef}
           className="relative"
           onMouseEnter={() => setMenuHoverVisible(true)} // Open on hover
           onMouseLeave={() => setMenuHoverVisible(false)} // Close on hover leave
