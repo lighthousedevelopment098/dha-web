@@ -9,7 +9,7 @@ import image8 from "../assets/Images/Advertisements/expressway.jpg";
 import image9 from "../assets/Images/Advertisements/secter-j.jpg";
 import image10 from "../assets/Images/Advertisements/secter-k.jpg";
 import image12 from "../assets/Images/Advertisements/auction.jpg";
-import { title } from "framer-motion/client";
+// import { title } from "framer-motion/client";
 // import { label } from "framer-motion/client";
 
 export const menuData = [
@@ -374,7 +374,7 @@ export const ServiceData = [
     description: "* Tree plantation and recycling programs.",
     description1: "* Tree plantation and recycling programs.",
     description2: "* Water and energy conservation workshops.",
-    link: "/phase-I-details",
+    // link: "/phase-I-details",
     bgImg: "/pngwing.com.png",
     imgHover: "/mapphase1.png",
   },

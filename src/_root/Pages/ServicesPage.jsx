@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import MapSectionBlock from "../../components/MapSectionBlock";
-import { MapphasesData, phasesData, ServiceData } from "../../Utils/data";
-import SectionBlocks from "../../components/Home/SectionBlocks";
+
+import { ServiceData } from "../../Utils/data";
+
 import ServicesCard from "../../components/ServicesCard";
 const ServicesPage = () => {
   useEffect(() => {
